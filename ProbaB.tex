@@ -338,6 +338,142 @@ Sea $\mathbb{X}$ un vector aleatorio de dimension $n$, definimos la funcion de d
 \subsection{Propiedades del vector aleatorio ($\mathbb{X} = (X,Y)$)}
 \begin{enumerate}
     \item $\lim_{x,y \to \infty} F_{\mathbb{X}}(x) =1$,
+    \item $ F_{\mathbb{X} (x)}$ es monotona no decreciente en cada variable.
+    \item $ F_{\mathbb{X} (x)}$ es continua a derecha en cada variable.
+    \item $ P((X,Y) \in (a_{1},b_{1})x(a_{2},b_{2})) = F_{\mathbb{X}(b_{1},b{2})} - F_{\mathbb{X}(b_{1},a{2})} -F_{\mathbb{X}(a_{1},b{2})} + F_{\mathbb{X}(a_{1},a{2})}$ 
 \end{enumerate}
+
+\subsection{Funcion de probabilidad de vectores aleatorios discretos (probabilidad conjunta)}
+Sean $X$ e $Y$ dos V.A.D definidas en el espacio muestral $\Omega$ de un experimento.
+La funcion de probabilidad conjunta se define para cada par de numeros $(x,y)$ como:
+\begin{equation*}
+    p_{X,Y}(x,y) = P(X = x, Y = y)
+\end{equation*}
+Debe cumplirse que:
+\begin{enumerate}
+    \item $ p_{X,Y}(x,y) \geq 0 $
+    \item $ \sum_{x} \sum_{y} p_{X,Y}(x,y) = 1 $
+\end{enumerate}
+
+\subsubsection{Funciones de probabilidad marginales y de conjuntos}
+Para el caso de las variables aleatorias recien mencionadas, sus funciones de probabilidad
+marginales estan dadas por:
+\begin{equation*}
+    p_{X}(x) = \sum_{y} p_{X,Y}(x,y)
+\end{equation*}
+\begin{equation*}
+    p_{Y}(y) = \sum_{x} p_{X,Y}(x,y)
+\end{equation*}
+Para el caso de cualquier conjunto A compuesto por pares de valores $(x,y)$ entonces:
+\begin{equation*}
+    P((X,Y) \in A) = \sum_{(x,y) \in A}\sum  p_{X,Y}(x,y)
+\end{equation*} 
+\subsection{Funcion de densidad de un vector aleatorio continuo}
+Sean $X$ e $Y$ V.A.C una funcion de denisidad de probabilidad conjunta $f_{X,Y}(x,y)$ de 
+estas dos variables es una funcion que satisface:
+\begin{enumerate}
+    \item $f_{X,Y}(x,y) \geq 0$
+    \item $ \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} f_{X,Y}(x,y) dxdy = 1 $
+\end{enumerate}
+\subsubsection{Funciones de densidad marginales}
+Para calcular las funciones de densidad marginales de X e Y:
+\begin{enumerate}
+    \item $f_{X}(x) = \int_{-\infty}^{\infty} f_{X,Y}(x,y) dy$
+    \item $f_{Y}(y) = \int_{-\infty}^{\infty} f_{X,Y}(x,y) dx$
+\end{enumerate}
+
+\subsection{Independecia de vectores aleatorios}
+Sea $(X,Y)$ un vector aleatorio, las variables aleatorias $X$ e $Y$ son independientes
+si y solo si:
+\begin{equation*}
+    P((X \in A) \cap (Y \in B)) = P(X \in A) \cdot P(Y \in B) \hspace*{8px} \forall A,B 
+\end{equation*}
+\subsubsection{Propiedades de la independencia de vectores aleatorios}
+\begin{enumerate}
+    \item Se dice que $X_{1}...X_{n}$ son V.A independientes sii 
+    \begin{equation*}
+        F_{X_{1}...X_{n}}(x_{1},...,x_{n}) = F_{X_{1}}(x_{1}) \cdot ... \cdot F_{X_{n}(x_{n})}
+    \end{equation*}
+    \item Se dice que las V.A discretas $X_{1},...,X_{n}$ independientes sii 
+    \begin{equation*}
+        p_{X_{1},...,X_{n}} (x_{1},...,x_{n}) = p_{X_{1}}(x_{1}) \cdot ... \cdot p_{X_{n}}(x_{n})
+    \end{equation*}
+    \item Se dice que las V.A continuas $X_{1},...,X_{n}$ son independientes sii 
+    \begin{equation*}
+        f_{X_{1},...,X_{n}} (x_{1},...,x_{n}) = f_{X_{1}}(x_{1}) \cdot ... \cdot f_{X_{n}}(x_{n})
+    \end{equation*}
+\end{enumerate}
+
+\section{Momentos}
+\subsection{Esperanza}
+Es el promedio ponderado de los valores que puede tomar una V.A. ("centro de masa")
+Sea $X$ una V.A.D con funcion de probabilidad $p_{X}(x)$, el valor esperado (o media) de X es:
+\begin{enumerate}
+    \item Para discretas:
+    \begin{equation*}
+        E(X) = \sum_{x \in R_{x}} x \cdot p_{X}(x)
+    \end{equation*}
+    \item Para continuas:
+    \begin{equation*}
+        E(X) = \int_{-\infty}^{\infty} x \cdot f_{X}(x)dx
+    \end{equation*}
+\end{enumerate}
+
+\subsubsection{Propiedades}
+\begin{enumerate}
+    \item El valor de la esperanza de cualquier funcion $h(x)$ (una V.A.) se calcula como:
+    \begin{enumerate}
+        \item Para discretas:
+        \begin{equation*}
+            E(h(x)) = \sum_{x \in R_{x}} h(x) \cdot p_{x}(x)
+        \end{equation*}
+        \item Para continuas:
+        \begin{equation*}
+            E(h(x)) = \int_{-\infty}^{\infty}  h(x) \cdot f_{x}(x)
+        \end{equation*}
+    \end{enumerate}
+    \item Sea $X$ una V.A. con E(X) = $\mu$ si $h(x) = aX+b \rightarrow E(h(X)) = a\mu+b$
+\end{enumerate}
+\subsubsection{CASO GENERAL}
+Sea $X$ una V.A. con funcion de distribucion $F_{X}(x) = P(X\geq x)$ si $h(X)$ es una funcion 
+cualquiera de $X$, si definimos A como el conjunto de atomos (valores de $X$ que concentren masa positiva), entonces:
+\begin{equation*}
+    E[h(X)] = \sum_{x \in A} h(x) \cdot P(X = x) + \int_{\mathbb{R} / A} h(x) \cdot F'_{X}(x)dx
+\end{equation*}
+\subsection{Esperanza condicional}
+\begin{equation*}
+    E[X|X \in A] = \frac{E[X \mathbbm{1}{X \in A}]}{P(X \in A)}
+\end{equation*}
+Si despejo, y pienso en una particion tenemos:
+\begin{equation*}
+    E(X) = E[X|X \in A] \cdot P(X \in A) +  E[X|X \in \bar{A}] \cdot P(X \in \bar{A})
+\end{equation*}
+\subsubsection{Propiedad}
+Otra manera para calcular la esperanza que puede ser util:
+\begin{equation*}
+    E(X) = \int_{0}^{\infty}(1-F_{X}(x))dx - \int_{-\infty}^{0}F_{X}(x)dx
+\end{equation*}
+\subsection{Varianza}
+Sea $X$ una V.A, definimos la varianza $X$ como:
+\begin{equation*}
+    Var(X) = E[(X-E(X))^2]
+\end{equation*}
+\subsubsection{Propiedad}
+\begin{equation*}
+    Var(X) = E[(X-E(X))^2] = E[X^2 - 2XE(X)+ E(X)]
+\end{equation*}
+Si $E(X)= \mu$
+\begin{equation*}
+    \rightarrow Var(X) = E(X^2)-2\mu E(X) + \mu^2 = E(X^2)-\mu^2 = E(X^2)-E(X)^2
+\end{equation*}
+\subsubsection{Desvio estandar}
+Se define como la raiz cuadrada de la varianza de una V.A.:
+\begin{equation*}
+    \sigma_{x} = \sqrt{Var(X)}
+\end{equation*}
+\subsubsection{Mediana}
+Es el valor de $X$ que acumula una probabilidad de 0.5 (es el cuantil 0.5) : $X / F_{X}(x) = 0.5$
+\subsubsection{Moda}
+Es el valor de $X$ con mayor probabilidad.
 
 \end{document}

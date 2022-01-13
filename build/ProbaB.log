@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.4.24)  13 SEP 2021 16:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.4.24)  13 JAN 2022 20:45
 entering extended mode
-**"c:/Users/igna-/OneDrive/Escritorio/FIUBA/Proba/MI APUNTE/ProbaB.tex"
-(c:/Users/igna-/OneDrive/Escritorio/FIUBA/Proba/MI APUNTE/ProbaB.tex
+**"c:/Users/igna-/OneDrive/Escritorio/FIUBA/Proba/MI APUNTE/Apunte-ProbaB/ProbaB.tex"
+(c:/Users/igna-/OneDrive/Escritorio/FIUBA/Proba/MI APUNTE/Apunte-ProbaB/ProbaB.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18> xparse <2020-03-03> (C:\Users\igna-\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
@@ -467,7 +467,7 @@ LaTeX Info: Redefining \] on input line 2924.
 File: l3backend-pdftex.def 2021-02-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count301
 \l__pdf_internal_box=\box62
-) (c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\build\ProbaB.aux
+) (c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\Apunte-ProbaB\build\ProbaB.aux
 LaTeX Info: Redefining \. on input line 26.
 LaTeX Info: Redefining \% on input line 26.
 )
@@ -530,7 +530,7 @@ Package pdftex.def Info: logofiuba.jpg  used on input line 26.
 (pdftex.def)             Requested size: 170.71652pt x 57.0641pt.
  [1
 
-{C:/Users/igna-/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <c:/Users/igna-/OneDrive/Escritorio/FIUBA/Proba/MI APUNTE/build/logofiuba.jpg>] (c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\build\ProbaB.toc
+{C:/Users/igna-/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <c:/Users/igna-/OneDrive/Escritorio/FIUBA/Proba/MI APUNTE/Apunte-ProbaB/build/logofiuba.jpg>] (c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\Apunte-ProbaB\build\ProbaB.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
@@ -540,21 +540,21 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
  (C:\Users\igna-\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
+)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.46 ...1.1}Propiedades}{10}{subsubsection.11.1.1}
+                                                  % [1])
 \tf@toc=\write4
 \openout4 = `ProbaB.toc'.
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.39 \newpage
-              [1]
+ [2]
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 79.
 
-[2]
+[3]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 107.
@@ -567,11 +567,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 107.
 
-[3] [4] [5] [6]
+[4] [5] [6] [7]
 LaTeX Font Info:    Trying to load font information for U+bbm on input line 326.
  (C:\Users\igna-\AppData\Local\Programs\MiKTeX\tex/latex/bbm\ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
-) [7]
+) [8]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 338.
@@ -580,22 +580,22 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 338.
 
-[8] (c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\build\ProbaB.aux
+[9] [10] [11] (c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\Apunte-ProbaB\build\ProbaB.aux
 LaTeX Info: Redefining \. on input line 26.
 LaTeX Info: Redefining \% on input line 26.
 ) ) 
 Here is how much of TeX's memory you used:
- 20736 strings out of 479334
- 374975 string characters out of 2857084
- 668967 words of memory out of 3000000
- 37724 multiletter control sequences out of 15000+200000
+ 20799 strings out of 479334
+ 375817 string characters out of 2857084
+ 671969 words of memory out of 3000000
+ 37749 multiletter control sequences out of 15000+200000
  418952 words of font info for 70 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 87i,12n,89p,932b,420s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 87i,12n,89p,1076b,636s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\igna-\AppData\Local\MiKTeX\fonts/pk/ljfour/public/bbm/dpi600\bbm10.pk> <C:\Users\igna-\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\igna-\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\igna-\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\igna-\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\igna-\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\igna-\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\igna-\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk><C:/Users/igna-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/igna-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Users/igna-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/igna-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/igna-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/igna-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/igna-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/igna-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/igna-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/igna-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/igna-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/igna-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/igna-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/igna-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/igna-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on "c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\build\ProbaB.pdf" (9 pages, 421925 bytes).
+Output written on "c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\Apunte-ProbaB\build\ProbaB.pdf" (12 pages, 450960 bytes).
 PDF statistics:
- 608 PDF objects out of 1000 (max. 8388607)
- 77 named destinations out of 1000 (max. 500000)
- 306 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 742 PDF objects out of 1000 (max. 8388607)
+ 115 named destinations out of 1000 (max. 500000)
+ 442 words of extra memory for PDF output out of 10000 (max. 10000000)
 

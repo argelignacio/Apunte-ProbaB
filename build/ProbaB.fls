@@ -1,7 +1,7 @@
-PWD c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE
+PWD c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\Apunte-ProbaB
 INPUT C:\Users\igna-\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\ProbaB.tex
-OUTPUT c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\build\ProbaB.log
+INPUT c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\Apunte-ProbaB\ProbaB.tex
+OUTPUT c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\Apunte-ProbaB\build\ProbaB.log
 INPUT C:\Users\igna-\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\igna-\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\igna-\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
@@ -761,10 +761,10 @@ INPUT C:\Users\igna-\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend
 INPUT C:\Users\igna-\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\igna-\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\igna-\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\build\ProbaB.aux
-INPUT c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\build\ProbaB.aux
-INPUT c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\build\ProbaB.aux
-OUTPUT c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\build\ProbaB.aux
+INPUT c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\Apunte-ProbaB\build\ProbaB.aux
+INPUT c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\Apunte-ProbaB\build\ProbaB.aux
+INPUT c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\Apunte-ProbaB\build\ProbaB.aux
+OUTPUT c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\Apunte-ProbaB\build\ProbaB.aux
 INPUT C:\Users\igna-\AppData\Local\Programs\MiKTeX\tex\latex\graphics\color.sty
 INPUT C:\Users\igna-\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\nameref.sty
 INPUT C:\Users\igna-\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\nameref.sty
@@ -803,7 +803,7 @@ INPUT C:\Users\igna-\AppData\Local\Programs\MiKTeX\tex\generic\gettitlestring\ge
 INPUT C:\Users\igna-\AppData\Local\Programs\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
 INPUT C:\Users\igna-\AppData\Local\Programs\MiKTeX\tex\latex\kvoptions\kvoptions.sty
 INPUT C:\Users\igna-\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
-OUTPUT c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\build\ProbaB.pdf
+OUTPUT c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\Apunte-ProbaB\build\ProbaB.pdf
 INPUT C:\Users\igna-\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\igna-\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\igna-\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -819,21 +819,21 @@ INPUT C:\Users\igna-\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstop
 INPUT C:\Users\igna-\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
 INPUT C:\Users\igna-\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
 INPUT C:\Users\igna-\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\build\logofiuba.jpg
-INPUT c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\build\logofiuba.jpg
-INPUT c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\build\logofiuba.jpg
-INPUT c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\build\logofiuba.jpg
-INPUT c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\build\logofiuba.jpg
-INPUT c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\build\logofiuba.jpg
-INPUT c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\build\logofiuba.jpg
+INPUT c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\Apunte-ProbaB\build\logofiuba.jpg
+INPUT c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\Apunte-ProbaB\build\logofiuba.jpg
+INPUT c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\Apunte-ProbaB\build\logofiuba.jpg
+INPUT c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\Apunte-ProbaB\build\logofiuba.jpg
+INPUT c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\Apunte-ProbaB\build\logofiuba.jpg
+INPUT c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\Apunte-ProbaB\build\logofiuba.jpg
+INPUT c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\Apunte-ProbaB\build\logofiuba.jpg
 INPUT C:\Users\igna-\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm2488.tfm
 INPUT C:\Users\igna-\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx2488.tfm
 INPUT C:\Users\igna-\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1440.tfm
 INPUT C:\Users\igna-\AppData\Local\MiKTeX\pdftex\config\pdftex.map
 INPUT C:\Users\igna-\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1440.tfm
-INPUT c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\build\ProbaB.toc
-INPUT c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\build\ProbaB.toc
-INPUT c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\build\ProbaB.toc
+INPUT c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\Apunte-ProbaB\build\ProbaB.toc
+INPUT c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\Apunte-ProbaB\build\ProbaB.toc
+INPUT c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\Apunte-ProbaB\build\ProbaB.toc
 INPUT C:\Users\igna-\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1000.tfm
 INPUT C:\Users\igna-\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Users\igna-\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
@@ -851,7 +851,7 @@ INPUT C:\Users\igna-\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsb.fd
 INPUT C:\Users\igna-\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\igna-\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Users\igna-\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
-OUTPUT c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\build\ProbaB.toc
+OUTPUT c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\Apunte-ProbaB\build\ProbaB.toc
 INPUT C:\Users\igna-\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1200.tfm
 INPUT C:\Users\igna-\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1200.tfm
 INPUT C:\Users\igna-\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
@@ -885,7 +885,7 @@ INPUT C:\Users\igna-\AppData\Local\MiKTeX\fonts\tfm\public\bbm\bbm5.tfm
 INPUT C:\Users\igna-\AppData\Local\MiKTeX\fonts\tfm\public\bbm\bbm12.tfm
 INPUT C:\Users\igna-\AppData\Local\MiKTeX\fonts\tfm\public\bbm\bbm8.tfm
 INPUT C:\Users\igna-\AppData\Local\MiKTeX\fonts\tfm\public\bbm\bbm6.tfm
-INPUT c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\build\ProbaB.aux
+INPUT c:\Users\igna-\OneDrive\Escritorio\FIUBA\Proba\MI APUNTE\Apunte-ProbaB\build\ProbaB.aux
 INPUT C:\Users\igna-\AppData\Local\MiKTeX\fonts\pk\ljfour\public\bbm\dpi600\bbm10.pk
 INPUT C:\Users\igna-\AppData\Local\MiKTeX\fonts\pk\ljfour\public\bbm\dpi600\bbm10.pk
 INPUT C:\Users\igna-\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1000.pk
