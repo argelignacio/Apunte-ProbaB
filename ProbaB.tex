@@ -1,0 +1,343 @@
+\documentclass[titlepage,a4paper]{article}
+
+\usepackage{bbm}
+\usepackage{a4wide}
+\usepackage[colorlinks=true,linkcolor=black,urlcolor=blue,bookmarksopen=true]{hyperref}
+\usepackage{bookmark}
+\usepackage{fancyhdr}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+
+\pagestyle{fancy} % Encabezado y pie de página
+\fancyhf{}
+\fancyhead[R]{Resumen Probabilidad y Estadistica B - FIUBA}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancyfoot[C]{\thepage}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\begin{document}
+\begin{titlepage} % Carátula
+	\hfill\includegraphics[width=6cm]{logofiuba.jpg}
+    \centering
+    \vspace{20px}
+    \newline
+    
+    \Huge \textbf{Probabilidad y Estadistica B}
+    \vskip2cm
+    \Large Resumen Probabilidad y Estadistica B\\
+    Segundo cuatrimestre de 2021 
+    
+\end{titlepage}
+
+\tableofcontents % Índice general
+\newpage
+
+\section{Axiomas de Probabilidad}
+
+Una probabilidad es una funcion de P que a cada evento A le hace corresponder un numero real P(A) con las siguientes propiedades:
+\begin{enumerate}
+    \item $0 \leq P(A) \leq 1$ 
+    \item $P(\Omega)$ = 1 
+    \item $ A \cap B = \emptyset \Longrightarrow P(A \cap B) = P(A) + P(B)  $
+    \item $P(\bar{A}) = 1  - P(A)$
+\end{enumerate}
+
+\section{Experimentos con resultados equiprobables}
+\subsection{Laplace}
+Evento $A$ con $M$ elementos y $\Omega$ espacio finito de $N$ elementos:
+\begin{equation*}
+    P(A) = \frac{M}{N} = \frac{card(A)}{card(\Omega)}
+\end{equation*}
+
+\section{Conteo}
+\subsection{Regla del producto}
+Sirve para conjunto de pares ordenados entre dos conjuntos $A$ y $B$: (cada uno de A con cada uno de B)
+\begin{equation*}
+    A \times  B = \{(a,b) : a \in A, b \in B \} = card(A) \cdot card(B)
+\end{equation*}
+
+\subsection{Permutaciones}
+Sirve para saber de cuantas formas se pueden ordenar $n$ elementos de un conjunto:
+\begin{equation*}
+    n! = 1 \times 2 \times ...\times n
+\end{equation*}
+
+\subsection{Variaciones}
+Sirve para subconjuntos ordenados de $k$ elementos, pertenecientes a un conjunto de $n$ elementos, se representa como $(n)_{k}$:
+\begin{equation*}
+    (n)_{k} = n(n-1) ... (n-k+1) = \frac{n!}{(n-k)!}
+\end{equation*}
+\textbf{OBS}: se hace con el boton $nPr$
+
+\subsection{Combinaciones}
+Sirve para subconjuntos sin ordenar de $k$ elementos, pertenecientes a un conjunto de $n$ elementos, se representa como $n \choose k$:
+\begin{equation*}
+    {n \choose k} = \frac{n!}{k!(n-k)!}
+\end{equation*}
+\textbf{OBS}: se hace con el boton $nCr$
+
+\subsection{Bolas y urnas}
+Sirve para bolas indistinguibles y urnas:
+\begin{equation*}
+    \# CP = {B+(U-1) \choose B}
+\end{equation*}
+\textbf{OBS}: se hace con el boton $nPr$
+
+\section{Teoremas sobre conjuntos de eventos}
+
+\subsection{Teorema 1}
+Sea $A(n)$ una sucesion de eventos tales que $A_{n} \subset A_{n+1} \forall n$ y $A = \bigcup_{i=0}^{\infty} A_{i}$ :
+\begin{equation*}
+    P(A) = \lim_{n \to \infty } P(A_{n})
+\end{equation*}
+
+
+\subsection{Teorema 2}
+Sea $A(n)$ una sucesion de eventos tales que $A_{n+1} \subset A_{n} \forall n$ y $A = \bigcap_{i=0}^{\infty} A_{i}$ :
+\begin{equation*}
+    P(A) = \lim_{n \to \infty } P(A_{n})
+\end{equation*}
+
+\subsection{Teorema $\sigma$-aditividad}
+Sea $A = \bigcup_{i=0}^{\infty} A_{i} \in \mathcal{A} $ con los eventos $A_{i}$ mutuamente excluyentes 2 a 2, entonces:
+\begin{equation*}
+    P(A) = P(\bigcup_{i=0}^{\infty} A_{i}) = \sum_{i=1}^{\infty}P(A_{i})
+\end{equation*}
+
+\section{Relaciones entre dos eventos: probabilidad condicional e independencia}
+
+\subsection{Probabilidad condicional}
+Es la probabilidad que un evento $A$ se de, sabiendo que ya se dio el evento $B$ ($A$ dado $B$):
+\begin{equation*}
+    P(A|B) = \frac{P(A \cap B)}{P(B)}
+\end{equation*}
+
+\subsubsection*{Propiedades de la probabilidad condicional}
+\begin{enumerate}
+    \item $0 \leq P(A|B) \leq 1$, $\forall A \in \mathcal{A}$
+    \item $P(\Omega|B) = 1$
+    \item Si $A \cap C = \emptyset \rightarrow P(A \cup C | B) = P(A|B) + P(C|B)$ 
+    \item Si $P(B) > 0$ :\begin{itemize}
+        \item $P(A \cap B) = P(A|B)\cdot P(B) = P(B|A) \cdot P(A)$
+        \item $P(A \cap B \cap C) = P(A|B \cap C) \cdot P(A|B) \cdot P(C) =P(A|B \cap C) \cdot P(B\cap C) $
+    \end{itemize}
+\end{enumerate}
+
+\subsubsection*{Teorema de la probabilidad total}
+Dada una particion de $\Omega$ en $B_{1},B_{2},...,B_{n}$ eventos, dado un evento superpuesto $A$, la probabilidad de $A$ es:
+\begin{equation*}
+    P(A) = \sum_{i=1}^{n} P(A|B_{i}) \cdot P(B_{i})
+\end{equation*}
+
+\subsection{Independencia de eventos}
+Dos eventos son independientes cuando:
+\begin{equation*}
+    P (A \cap B) = P(A) \cdot P(B)
+\end{equation*}
+Esto implica que hay la misma proporcion de $B$ en $A$ que en todo $\Omega$ y viceversa.
+
+\subsubsection*{Propiedades de la independencia de eventos}
+\begin{enumerate}
+    \item Si $A$ y $B$ son independientes, tambien lo son $\bar{A}$ y $B$, $A$ y $\bar{B}$, $\bar{A}$ y $\bar{B}$
+    \item $A_{1},A_{2},...,A_{n}$ son independientes sii para cada subconjunto de mas de dos elementos, la interseccion de los sucesos coincide con el producto de las probabilidades.
+\end{enumerate}
+
+
+\subsection{Teorema de Bayes}
+Sean $B_{1},B_{2},...,B_{k}$ una particion de $\Omega$, $A$ un evento de probabilidad positiva:
+\begin{equation*}
+    P(B_{i}|A) = \frac{P(A|B_{i}) \cdot P(B_{i})}{\sum_{j=1}^{k} P(A|B_{i}) \cdot P(B_{i})}
+\end{equation*}
+Se deduce de la definicion de probabilidad condicional y el teorema de probabilidad total.
+
+\section{Variables aleatorias}
+Sea ($\Omega, \mathcal{A}, P$) un espacio de probabilidad y $ \text{X: }\Omega \rightarrow \mathbb{R}$  una funcion, diremos que $X$ es una variable aleatoria si
+$X^{-1}(B) \in \mathcal{A}$. Se puede calcular probabilidad como:
+\begin{equation*}
+    P(X^{-1}(B)) = P(X \in B)
+\end{equation*}
+
+\subsection{Funcion de distribucion}
+Sea ($\Omega, \mathcal{A}, P$) un espacio de probabilidad y $X$ una V.A., definimos su \underline{funcion de distribucion}:
+\begin{equation*}
+    F_{X} (x) = P(X \leq x) \hspace{16px}  \forall x \in \mathbb{R}
+\end{equation*}
+Esta funcion se encarga de acumular probabilidad desde $-\infty$ hasta $x$.\\
+\textbf{OBS}: $P(A < X \leq B) = F_{X}(B) - F_{X}(A)$
+\subsubsection*{Propiedades de la funcion de distribucion}
+\begin{enumerate}
+    \item $F_{X} \in [0,1] \hspace{8px} \forall x \in \mathbb{R}$.
+    \item $F_{X}$ es monotona np decreciente.
+    \item $F_{X}$ es continua a derecha.
+    \item $\lim_{x \to {-\infty}} F_{X}(x) = 0$ y $\lim_{x \to {+\infty}} F_{X}(x) = 1$
+\end{enumerate}
+
+\subsection{Soporte de una V.A}
+El soporte de X es:
+\begin{equation*}
+    S_{X} = \{ x \in \mathbb{R} : F_{X}(x) - F_{X}(x^{-}) \neq 0 \vee \frac{dF_{X}(x)}{dx} \neq 0 \}
+\end{equation*}
+
+\subsection{Variables aleatorias discretas}
+La variable $X$ tiene una distribucion discreta si hay un conjunto $A \in \mathbb{R}$ finito o infinito numerable, tal que $P(X \in A) = 1$.\\
+Sea para cada $x \in A:$ $p_{X}(x) = P(X = x)$, se verifica que si $B \subset \mathbb{R}$: 
+\begin{equation*}
+    P(X \in B) = \sum_{x \in B \cap A} p_{X}(x)
+\end{equation*}
+Y en particular:
+\begin{equation*}
+    \sum_{x \in A} p_{X}(x) = 1 
+\end{equation*}
+Y la funcion de distribucion es dado un $B = (-\infty,t]$ resulta:
+\begin{equation*}
+    P(X \in B) = P(X \leq t) = F_{X}(t) = \sum_{x \leq t} p_{X}(x)
+\end{equation*}
+
+\subsection{Variables aleatorias continuas}
+Una variable aleatoria es continua si:
+\begin{enumerate}
+    \item 
+    \begin{enumerate}
+        \item El conjunto de valores posibles se compone de todos los numeros que hay en un solo intervalo o una union excluyente de estos.
+        \item Ninguno de estos valores tiene un valor de probabilidad positivo $P(x=c) = 0 \hspace{8px} \forall c \in \mathbb{R}$  
+    \end{enumerate}
+    \item Se dice que $X$ es una variable continua si existe una funcion $f_{X}: \mathbb{R} \to \mathbb{R}$, llamada \underline{funcion de densidad}
+    de probabilidad, que satisface las siguientes condiciones:
+    \begin{enumerate}
+        \item $f_{X} \geq 0 \hspace{8px} \forall x \in \mathbb{R}$
+        \item $\int_{-\infty}^{\infty} f_{X}(x) dx = 1$
+        \item Para cualquier $a$ y $b$ tales que $-\infty < a<b< +\infty$:
+        \begin{equation*}
+            P(a<X<b) = \int_{a}^{b} f_{X}(x) dx
+        \end{equation*}
+    \end{enumerate}
+\end{enumerate}
+
+\subsubsection*{Teorema}
+Sea $F_{X} (x)$ una funcion de distribucion de una V.A.C. (admite derivada), luego:
+\begin{equation*}
+    f_{X}(x) = \frac{dF_{X}(x)}{dx}
+\end{equation*}
+\textbf{OBS}: La funcion de densidad solo existe para V.A.C.
+
+\subsection{Eventos equivalentes}
+Dos eventos son equivalentes si acumulan la misma probabilidad. Para V.A.D. significa que ambos eventos tiene la misma probabilidad.
+
+\section{Modelos continuos: distribuciones notables}
+\subsection{Distribucion Uniforme}
+Supongamos una V.A.C. que toma todos los valores sobre un intervalo $[a,b]$. Si $f_{X}(x)$ esta dada por:
+$$f_{X}(x)= \left\{ \begin{array}{lcc}
+    \frac{1}{b-a} &   si  & a<X<b \\
+    \\0 &  e.o.c 
+    \end{array}
+\right.$$
+Se denota como $X \sim \mathcal{U} (a,b)$
+\subsection{Distribucion exponencial}
+Una variable aleatoria tiene una distribucion exponencial de parametro $\lambda > 0$ si su funcion de densidad esta dada por:
+$$f_{X}(x)= \left\{ \begin{array}{lcc}
+    \lambda e^{-\lambda x} &   si  & x>0 \\
+    \\0 &  e.o.c 
+    \end{array}
+\right.$$
+
+Y su funcion de distribucion es:
+\begin{equation*}
+    F_{X}(x)=P(X \leq x) = \left\{ \begin{array}{lcc}
+        0 &   si  & x<0 \\
+        \\ \int_{0}^{\alpha} \lambda e^{-\lambda t} dt = 1- e^{-\lambda \alpha} & &  e.o.c 
+        \end{array}
+    \right.
+\end{equation*}
+\subsubsection*{Propiedades de la exponencial}
+\begin{enumerate}
+    \item (PERDIDA DE MEMORIA) Si $X \sim \mathcal{E} (\lambda)$ entonces $P(X>t+s|X>t) = P(X>s)$  $\forall \hspace{8px} t,s  \in \mathbb{R}$.
+    \item Si $X$ es una V.A.C. y $P(X>t+s|X>t) = P(X>s)$  $\forall \hspace{8px} t,s \in \mathbb{R}^{+}$ entonces existe $\lambda >0 $ tal que $X \sim \mathcal{E}(\lambda)$
+\end{enumerate}
+
+\subsection{Funcion de Riesgo (para V.A.C.)}
+Dada la funcion intensidad de fallas $\lambda (t)$, la funcion de distribucion es:
+\begin{equation*}
+    F(t)= 1-e^{-\int_{0}^{\infty} \lambda(s)ds} \hspace{16px} \text{si  } t>0
+\end{equation*}
+
+\subsection{Distribucion Gamma}
+Se dice una V.A tiene distribucion Gamma de parametros $\lambda$ y $k$ si su funcion de densidad es:
+\begin{equation*}
+    f_{X}(x)= \frac{\lambda^k}{\Gamma(k)}x^{k-1}e^{-\lambda x} \hspace{16px} \text{si  } \{x>0\}
+\end{equation*}
+
+\subsection{Distribucion normal estandar}
+La V.A. X que toma los valores $-\infty < x < +\infty $ tiene una distribucion normal estandar si su funcion de densidad es:
+\begin{equation*}
+    f_{X}(x) = \frac{1}{\sqrt{2\pi}} e^{\frac{-x^{2}}{2}}
+\end{equation*}
+Para calcular probabilidades de esta distribucion hay que mirar la tabla o integrar numericamente.
+
+\subsection{Cuantil de una V.A}
+
+Un cuantil $\alpha$ de $X$ es cualquier numero $x_{\alpha}$ tal que :
+\begin{equation*}
+    P(X<x_{\alpha}) \leq \alpha \text{  y  } P(X>x_{\alpha}) \leq 1-\alpha
+\end{equation*}
+
+\section{Funciones de variables aleatorias}
+Sea $ Y = g(X)$ con X una variable aleatoria:\\
+Si $X$ es una V.A.D., Y sera discreta con:
+\begin{equation*}
+    p_{Y}(y) = P(Y=y) = \sum_{x \in B} p_{x}(x) \hspace{16px} \text{ con } \hspace{8px} B = \{ x\in \mathbb{R}: g(x)=y \}
+\end{equation*}
+Y en general:
+\begin{equation*}
+    F_{Y}(y)= P(Y \leq y) = P(g(x) \leq y)
+\end{equation*}
+Y con esta ultima se calcula la probabilidad $\forall y \in \mathbb{R}$
+
+\subsection{Simulacion}
+Sabiendo la distribucion de $X$ y teniendo una variable aleatoria $U$ para generar valores al azar, sabiendo su distribucion, entonces
+se busca una $F_{U}(u_{i}) = F_{X}(x_{i})$, de donde se puede despejar $x_{i}$ en funcion de $u_{i}$.
+Este despeje se puede hacer mediante la \underline{INVERSA GENERALIZADA}:
+\begin{equation*}
+    F_{X}^{-1}(u) = min \{x \in \mathbb{R}: F_{X}(x) \leq u \} \hspace{16px} \text{con } u \in (0,1)
+\end{equation*}
+
+\subsubsection*{Teorema}
+Si f es una funcion que cumple:
+\begin{itemize}
+    \item Ser no decreciente.
+    \item $\lim_{x \to +\infty}F(x) = 1$ y $\lim_{x \to -\infty}F(x) = 0$.
+    \item Continua a derecha.
+\end{itemize}
+$\Rightarrow X = F^{-1}(U)$ con $U \sim \mathcal{U}(0,1)$, se tiene que $X$ es una V.A. cuya funcion de de distribucion es la funcion F dada.
+
+\section{Truncamiento}
+Sea $X$ una V.A con $F_{X}(x) = P(X\leq x)$
+\begin{equation*}
+    F_{X|X \in A}(x) = P(X \leq x | X \in A)\\
+    \hspace{60px}=\frac{P(X \leq x, X \in A)}{P(X \in A)}
+\end{equation*}
+Si X es continua, $f_{X}(x) = \frac{dF_{X}(x)}{dx}$
+\begin{equation*}
+    \Rightarrow f_{X|X \in A}(x) = \frac{d}{dx}F_{X|X \in A(x)} = \frac{f_{X}(x) \mathbbm{1} \{X \in A\}}{P(X \in A)}
+\end{equation*}
+
+\section{Vectores Aleatorios}
+$\mathbb{X}  = (X_{1},X_{2},X_{3},...,X_{n})$ es un vector aleatorio de dimension $n$ si para cada $j = 1,...,n$; $X_{j}: \Omega \to \mathbb{R}$ es una
+V.A.
+\subsection{Funcion de distribucion de un vector aleatorio}
+Sea $\mathbb{X}$ un vector aleatorio de dimension $n$, definimos la funcion de distribucion de $\mathbb{X}$ como:
+\begin{equation*}
+    F_{\mathbb{X}}(\bar{x}) = P(X_{1} \leq x_{1},X_{2} \leq x_{2}, X_{3} \leq x_{3},..., X_{n} \leq x_{n})
+\end{equation*}
+
+\subsection{Propiedades del vector aleatorio ($\mathbb{X} = (X,Y)$)}
+\begin{enumerate}
+    \item $\lim_{x,y \to \infty} F_{\mathbb{X}}(x) =1$,
+\end{enumerate}
+
+\end{document}
