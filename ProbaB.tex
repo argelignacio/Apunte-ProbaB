@@ -442,7 +442,7 @@ cualquiera de $X$, si definimos A como el conjunto de atomos (valores de $X$ que
 \end{equation*}
 \subsection{Esperanza condicional}
 \begin{equation*}
-    E[X|X \in A] = \frac{E[X \mathbbm{1}{X \in A}]}{P(X \in A)}
+    E[X|X \in A] = \frac{E[X \mathbbm{1}\{X \in A\}]}{P(X \in A)}
 \end{equation*}
 Si despejo, y pienso en una particion tenemos:
 \begin{equation*}
@@ -475,5 +475,82 @@ Se define como la raiz cuadrada de la varianza de una V.A.:
 Es el valor de $X$ que acumula una probabilidad de 0.5 (es el cuantil 0.5) : $X / F_{X}(x) = 0.5$
 \subsubsection{Moda}
 Es el valor de $X$ con mayor probabilidad.
-
+\subsection{Esperanza de una funcion de un vector aleatorio}
+La esperanza de una funcion $h(X,Y)$ esta dada por:
+\begin{enumerate}
+    \item Si (X,Y) es un vector aleatorio discreto:
+    \begin{equation*}
+        E(h(X,Y)) = \sum_{x} \sum_{y} h(x,y) p_{X,Y}(x,y)
+    \end{equation*}
+    \item Si (X,Y) es un vector aleatorio continuo:
+    \begin{equation*}
+        E(h(X,Y)) = \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} h(x,y) f_{X,Y}(x,y) dxdy
+    \end{equation*}
+\end{enumerate}
+\subsubsection{Propiedades de Orden}
+Sea $X = (X_{1},...,X_{n})$ un vector aleatorio, $ g: \mathbb{R}^{k} \rightarrow \mathbb{R}$ una funcion, tenemos que:
+\begin{enumerate}
+    \item Si $X>0 \rightarrow E(X)>0$
+    \item Si $g(x)>0 \rightarrow E(g(X))>0$
+    \item Sea $ h(x)>g(x) \rightarrow E(h(X))> E(g(X)) $
+    \item $E(|X|) \geq E(X)$
+    \item $E(|XY|) \leq \sqrt{E(X^{2})E(Y^{2})} $
+\end{enumerate}
+\subsubsection{Propiedades importantes}
+\begin{enumerate}
+    \item \begin{equation*}
+        E[\sum_{i=1}^{n}a_{i}X_{i}] = \sum_{i=1}^{n}a_{i}E(X_{i})
+    \end{equation*}
+    \item Si $X_{1},...,X_{n}$ son independientes entonces: \begin{equation*}
+        E(\prod_{i=1}^{n}X_{i}) = \prod_{i=1}^{n}E(X_{i})
+    \end{equation*}
+\end{enumerate}
+\subsection{Covarinza}
+Sean $X$ e $Y$ dos V.A.:
+\begin{equation*}
+    Cov(X,Y) = E[(X-E(X))(Y-E(Y))]
+\end{equation*}
+\subsubsection{Propiedades de la Covarinza}
+\begin{enumerate}
+    \item $Cov(X,Y) = E(X \cdot Y) - E(X)E(Y)$
+    \item Si $X$ e $Y$ son independientes entonces $E(X \cdot Y) = E(X)E(Y) \rightarrow Cov(X,Y)=0$
+    \item $Cov(a+bX,c+dY) = b \cdot d \cdot Cov(X,Y)$ 
+    \item $Cov(X+Y,Z) = Cov(X,Z)+Cov(Y,Z)$
+    \item $Var(X+Y) = Var(x) + Var(Y) + 2Cov(X,Y)$
+\end{enumerate}
+\subsubsection{Coeficiente de correlacion}
+Entre las V.A $X$ e $Y$ esta dado por:
+\begin{equation*}
+    \rho_{XY} = \frac{Cov(X,Y)}{\sqrt{Var(X)Var(Y)}}
+\end{equation*}
+$\rightarrow -1 \leq \rho_{XY} \leq 1$ \\
+Propiedad: \\
+\begin{equation*}
+    |\rho_{XY}| = 1 \leftrightarrow P(aX+b =Y) =1 
+\end{equation*}
+\section{Prediccion}
+Sea Y una V.A., $\mathbb{X} = (X_{1},...,X_{n})$ un vector aleatorio, existira alguna funcion $g(\mathbb{X})$ que nos 
+sirva para predecir a $Y$. Para encontrar dicha funcion se calcula el error cuadratico medio:
+\begin{equation*}
+    ECM = E[(Y-g(\mathbb{X}))^{2}]
+\end{equation*}
+\subsection{Los mejores predictores}
+\begin{enumerate}
+    \item Constante: $E(X)$
+    \item Lineal: Recta de regresion de $Y$ basada en $X$ 
+    \begin{equation*}
+        g(X) = \hat{Y} = \frac{Cov(X,Y)}{Var(X)}(X-E(X))+E(Y)
+    \end{equation*}
+\end{enumerate}
+\section{Desigualdades}
+\subsection{Desigualdad de Markov}
+Sea $h: \mathbb{R} \rightarrow \mathbb{R}^{+}$ tal que h es par, y restringida a $R^{+}$ es creciente, y sea $X$ una V.A, tal que $E(h(X))$ existe,
+entonces $\forall t \in \mathbb{R}$,
+\begin{equation*}
+    P(|X| \geq t) \leq \frac{E[h(X)]}{h(t)}
+\end{equation*}
+Si ademas $X$ es no negativa, $\forall a > 0$
+\begin{equation*}
+    P(X \geq a) \leq \frac{E(X)}{a}
+\end{equation*}
 \end{document}

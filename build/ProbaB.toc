@@ -52,3 +52,13 @@
 \contentsline {subsubsection}{\numberline {11.3.2}Desvio estandar}{11}{subsubsection.11.3.2}%
 \contentsline {subsubsection}{\numberline {11.3.3}Mediana}{11}{subsubsection.11.3.3}%
 \contentsline {subsubsection}{\numberline {11.3.4}Moda}{11}{subsubsection.11.3.4}%
+\contentsline {subsection}{\numberline {11.4}Esperanza de una funcion de un vector aleatorio}{11}{subsection.11.4}%
+\contentsline {subsubsection}{\numberline {11.4.1}Propiedades de Orden}{12}{subsubsection.11.4.1}%
+\contentsline {subsubsection}{\numberline {11.4.2}Propiedades importantes}{12}{subsubsection.11.4.2}%
+\contentsline {subsection}{\numberline {11.5}Covarinza}{12}{subsection.11.5}%
+\contentsline {subsubsection}{\numberline {11.5.1}Propiedades de la Covarinza}{12}{subsubsection.11.5.1}%
+\contentsline {subsubsection}{\numberline {11.5.2}Coeficiente de correlacion}{12}{subsubsection.11.5.2}%
+\contentsline {section}{\numberline {12}Prediccion}{12}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Los mejores predictores}{13}{subsection.12.1}%
+\contentsline {section}{\numberline {13}Desigualdades}{13}{section.13}%
+\contentsline {subsection}{\numberline {13.1}Desigualdad de Markov}{13}{subsection.13.1}%
