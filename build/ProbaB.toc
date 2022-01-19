@@ -62,3 +62,8 @@
 \contentsline {subsection}{\numberline {12.1}Los mejores predictores}{13}{subsection.12.1}%
 \contentsline {section}{\numberline {13}Desigualdades}{13}{section.13}%
 \contentsline {subsection}{\numberline {13.1}Desigualdad de Markov}{13}{subsection.13.1}%
+\contentsline {subsection}{\numberline {13.2}Desigualdad de Tchevychev}{13}{subsection.13.2}%
+\contentsline {section}{\numberline {14}Funcion de variable aleatoria (cambio de variable)}{13}{section.14}%
+\contentsline {subsection}{\numberline {14.1}Metodo de eventos equivalentes}{13}{subsection.14.1}%
+\contentsline {subsection}{\numberline {14.2}Metodo del Jacobiano (para vectores aleatorios)}{13}{subsection.14.2}%
+\contentsline {section}{\numberline {15}Variables aleatorias condicionadas}{14}{section.15}%

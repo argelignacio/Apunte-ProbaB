@@ -553,4 +553,39 @@ Si ademas $X$ es no negativa, $\forall a > 0$
 \begin{equation*}
     P(X \geq a) \leq \frac{E(X)}{a}
 \end{equation*}
+\subsection{Desigualdad de Tchevychev}
+Sea $X$ una V.A. con varianza finita, $\forall k > 0$:
+\begin{equation*}
+    P(|X - E(X)| \geq k) \leq \frac{Var(X)}{k^{2}}
+\end{equation*}
+(desigualdad de Markov si $Y = X-E(X)$ y $h(t) = t^{2}$)
+\section{Funcion de variable aleatoria (cambio de variable)}
+Sea $X$ una variable aleatoria, sea $Y=g(x)$ una funcion de la variable $X$,
+buscamos encontrar la distribucion de la variable $Y$.
+\subsection{Metodo de eventos equivalentes}
+\begin{equation*}
+    F_{Y}(y)= P(Y \leq y) = P(g(X) \leq y)
+\end{equation*}
+\subsection{Metodo del Jacobiano (para vectores aleatorios)}
+Suponga que $Y_{1}$ e $Y_{2}$ con V.A. continuas con funcion de densidad conjunta
+$f_{Y_{1},Y_{2}}(y_{1},y_{2})$ y que para todo $(y_{1},y_{2})$ tal que 
+$f_{Y_{1},Y_{2}}(y_{1},y_{2}) > 0$, $u_{1} = h_{1}(y_{1},y_{2})$, $u_2=h_{2}(y_{1},y_{2})$
+es una transformacion 1 a 1 de $(y_{1},y_{2})$ y $(u_{1},u_{2})$ con inversa 
+$y_{1}=h_{1}^{-1}(u_{1},u_{2})$, $y_{2}=h_{2}^{-1}(u_{1},u_{2})$. Si las inversas
+tienen derivadas parciales continuas respecto de $u_{1}$ y $u_{2}$ con jacobiano $J$,
+entonces:
+\begin{equation*}
+    f_{U_{1},U_{2}}(u_{1},u_{2}) = \frac{f_{Y_{1},Y_{2}}(y_{1},y_{2})}{|J|} \bigg\rvert_{h_{1}^{-1}, h_{2}^{-1}}
+\end{equation*}
+\section{Variables aleatorias condicionadas}
+Definicion sea $X$ e $Y$ variables aleatorias discretas con $p_{X}(x)>0$, la funcion 
+de probabilidad de $Y$ dada que $X=x$ es:
+\begin{eqnarray*}
+    p_{Y|X=x}(y) = P(Y=y|X=x) = \frac{P(X=x,Y=y)}{P(X=x)} \\
+    \rightarrow p_{Y|X=x}(y)=\frac{p_{X,Y}(x,y)}{p_{X}(x)}
+\end{eqnarray*}
+Se define como p
+     
+
+
 \end{document}
