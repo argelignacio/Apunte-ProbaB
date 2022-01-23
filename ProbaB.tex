@@ -578,14 +578,89 @@ entonces:
     f_{U_{1},U_{2}}(u_{1},u_{2}) = \frac{f_{Y_{1},Y_{2}}(y_{1},y_{2})}{|J|} \bigg\rvert_{h_{1}^{-1}, h_{2}^{-1}}
 \end{equation*}
 \section{Variables aleatorias condicionadas}
-Definicion sea $X$ e $Y$ variables aleatorias discretas con $p_{X}(x)>0$, la funcion 
+Sea $X$ e $Y$ variables aleatorias discretas con $p_{X}(x)>0$, la funcion 
 de probabilidad de $Y$ dada que $X=x$ es:
 \begin{eqnarray*}
     p_{Y|X=x}(y) = P(Y=y|X=x) = \frac{P(X=x,Y=y)}{P(X=x)} \\
     \rightarrow p_{Y|X=x}(y)=\frac{p_{X,Y}(x,y)}{p_{X}(x)}
 \end{eqnarray*}
-Se define como p
-     
+Se define como $p_{Y|X=x}(y)=0$ cuando $p_{X}(x)=0$\\
+Recordar:
+\begin{eqnarray*}
+    p_{X,Y}(x,y) = p_{Y|X=x}(y)p_{X}(x)\\
+    p_{X,Y}(x,y) = p_{X|Y=y}(x)p_{Y}(y) 
+\end{eqnarray*}
+Sea $(X,Y)$ un vector aleatorio continuo con densidad conjunta $f_{X,Y}(x,y)$ y densidad marginal $f_{X}(x)$ 
+, entonces para cualquier valor de $X$ con el cual $f_{X}(x)$, la funcion de densidad de la variable condicionada $Y$ dada $X=x$ es:
+\begin{equation*}
+    f_{Y|X=x}(y) = \frac{f_{X,Y}(x,y)}{f_{X}(x)}
+\end{equation*}
+Si $f_{X}(x) = 0$ entonces se define como $f_{Y|X=x}=0$
+\subsection{Propiedades}
+\begin{enumerate}
+    \item Sea $X$ e $Y$ V.A. discretas tales que $p_{Y|X=x}(y)=p_{y}(y) \hspace{8px} \forall x \in \mathbb{R}$\\
+    $\rightarrow X$ e $Y$ son independientes.
+    \item $f_{X,Y}(x,y)=f_{Y|X=x}(y) \cdot f_{X}(x)$
+\end{enumerate}
+\section{Mezcla de variables aleatorias: Bayes para la mezcla}
+Sea $M$ una V.A.D. con soporte finito y $X$ una V.A.C., de manera que conozco la funcion de probabilidad de $M$
+y la funcion de densidad de las variables aleatorias $X|M=m, \hspace{8px} \forall m \in R_{M}$.
+La funcion de probabilidad de $M$ dado que $X=x$ sera:
+\begin{equation*}
+    p_{M|X=x}(m) = \frac{f_{X|M=m}(x) \cdot P(M=m) }{\sum_{i \in R_{M}}f_{X|M=i}(x) \cdot P(M=i)}
+\end{equation*}
+\section{Esperanza condicional}
+Si $Y|X=x$ es una V.A.D.
+\begin{equation*}
+    \rightarrow E[Y|X=x] = \sum_{y \in R_{Y|X=x}}y \cdot p_{Y|X=x}(y)
+\end{equation*}
+Si $Y|X=x$ es una V.A.C.
+\begin{equation*}
+    \rightarrow E[Y|X=x] = \int_{-\infty}^{\infty} y \cdot f_{Y|X=x}(y)
+\end{equation*}
+ Ambas son funcion de $x$ y se las llama \color{orange} Funcion de Regresion ($\phi (x)$)\color{black}\\
+ De aca desprende la definicion de Esperanza Condicional:\\
+ Si llamamos $\phi (x) = E[Y|X=x]$ a la esperanza de la variable condicionada $Y$ dado que $X = x$, luego 
+ $\phi: Sop(X)\rightarrow \mathbb{R}$ \\
+ Vamos a definir una variable aleatoria llamada \color{purple} Esperanza Condicional \color{black} de $Y$ dada $X$, denotada por $E[Y|X]$,
+ como $\phi (X)= E[Y|X]$ (cuidado!!!! es una V.A, no una esperanza)\\
+ Otra definicion:\\
+ La V.A. Esperanza Condicional de $Y$ dada $X$ se define como $\phi = E[Y|X]$, con $\phi$ una funcion medible tal que 
+ $E[(Y-\phi(x))\cdot t(X)] = 0$ para toda funcion $t$ medible $t:Sop(x)\rightarrow \mathbb{R}$ tal 
+ que $Y \cdot t(X)$ tiene esperanza finita.
+ Definimos $\phi(x) = E[Y|X=x]$
+ \subsection{Propiedades}
+ \begin{enumerate}
+     \item $E[E[Y|X]] = E[Y]$
+     \item Sea $X$ e $Y$ variables aleatorias, $s$ y $r$ funciones medibles tales que las variables aleatorias $r(X) \cdot s(Y)$; $r(X)$ y $s(Y)$ tiene esperanza finita, entonces 
+     \begin{equation*}
+         E[r(X) \cdot s(Y)|X] = r(X) E [s(Y)|X]
+     \end{equation*}
+     \item Sean $Y_{1}$ e $Y_{2}$ V.A con esperanza finita
+     \begin{equation*}
+         E[aY_{1}+bY_{2}|X] = aE[Y_{1}|X] + bE[Y_{2}|X]
+     \end{equation*}
+     \item $E[Y|X] = E[Y]$ si $X$ e $Y$ son independientes
+     \item $E[r(X)|X] = r(X)$
+ \end{enumerate} 
 
+ OBS: La esperanza condicional es de $Y$ dado $X$ es la funcion de la V.A. $X$ que mejor predice a $Y$.
+\section{Varianza Condicional}
+Sean $X$ e $Y$ variables aleatorias con $Var(Y)$ finita, la varianza de $Y|X=x$ sera:
+\begin{equation*}
+    Var(Y|X=x)=E[(Y-E(Y|X=x))^{2}|X=x]
+\end{equation*}
+Llamaremos $T(x)=Var(Y|X=x)$, $T: Sop(X) \rightarrow \mathbb{R}$ llamaremos varianza condicional de $Y$ dada $X$ a la V.A:
+\begin{equation*}
+    T(X) = Var(Y|X) = E[(Y-E(Y|X))^{2}|X]
+\end{equation*}
+Desarrollando el cuadrado y aplicando propiedades de esperanza condicional:
+\begin{equation*}
+    Var(Y|X) = E[Y^{2}|X] - E[Y|X]^{2}
+\end{equation*}
+\subsection{Propiedad (Pitagoras)}
+\begin{equation*}
+    Var(Y) = E[Var(Y|X)] + Var(E[Y|X])
+\end{equation*}
 
 \end{document}
