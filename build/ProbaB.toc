@@ -73,3 +73,14 @@
 \contentsline {subsection}{\numberline {17.1}Propiedades}{15}{subsection.17.1}%
 \contentsline {section}{\numberline {18}Varianza Condicional}{15}{section.18}%
 \contentsline {subsection}{\numberline {18.1}Propiedad (Pitagoras)}{15}{subsection.18.1}%
+\contentsline {section}{\numberline {19}Proceso de Bernoulli}{15}{section.19}%
+\contentsline {subsection}{\numberline {19.1}Condiciones}{15}{subsection.19.1}%
+\contentsline {subsection}{\numberline {19.2}Variables definibles}{16}{subsection.19.2}%
+\contentsline {section}{\numberline {20}Proceso de Poisson (puntual)}{16}{section.20}%
+\contentsline {subsection}{\numberline {20.1}Variables definibles}{16}{subsection.20.1}%
+\contentsline {subsection}{\numberline {20.2}Propiedades}{16}{subsection.20.2}%
+\contentsline {subsubsection}{\numberline {20.2.1}Adelgazamiento}{16}{subsubsection.20.2.1}%
+\contentsline {subsubsection}{\numberline {20.2.2}Superposicion de procesos de Poisson}{16}{subsubsection.20.2.2}%
+\contentsline {subsection}{\numberline {20.3}Teorema}{17}{subsection.20.3}%
+\contentsline {section}{\numberline {21}Distribucion Normal}{17}{section.21}%
+\contentsline {subsection}{\numberline {21.1}Metodo de calculo de probabilidades}{17}{subsection.21.1}%

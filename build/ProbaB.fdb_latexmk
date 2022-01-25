@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1642969344 "c:/Users/igna-/OneDrive/Escritorio/FIUBA/Proba/MI APUNTE/Apunte-ProbaB/ProbaB.tex" "build/ProbaB.pdf" "ProbaB" 1642969351
+["pdflatex"] 1643070781 "c:/Users/igna-/OneDrive/Escritorio/FIUBA/Proba/MI APUNTE/Apunte-ProbaB/ProbaB.tex" "build/ProbaB.pdf" "ProbaB" 1643070794
   "C:/Users/igna-/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1000.pk" 1620591614 25420 64eac522fe98e4d1be135d3a77df5898 ""
   "C:/Users/igna-/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1620591616 31952 29d87889fe19e6a9ff9e63cf5418f2ce ""
   "C:/Users/igna-/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1440.pk" 1620591618 40136 4825f4afa7df5d232a968ddab22d0aea ""
@@ -58,6 +58,7 @@
   "C:/Users/igna-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb" 1247596666 32915 7bf7720c61a5b3a7ff25b0964421c9b6 ""
   "C:/Users/igna-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1247596666 32716 08e384dc442464e7285e891af9f45947 ""
   "C:/Users/igna-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex7.pfb" 1247596670 30457 bc0868ebece724ed7c3d37e3d9bff7bd ""
+  "C:/Users/igna-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1247596673 31764 459c573c03a4949a528c2cc7f557e217 ""
   "C:/Users/igna-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1247596673 34694 870c211f62cb72718a00e353f14f254d ""
   "C:/Users/igna-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb" 1247596673 35309 940e81a5b9e04201a07e8b33a3ae6e64 ""
   "C:/Users/igna-/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
@@ -133,6 +134,7 @@
   "C:/Users/igna-/AppData/Local/Programs/MiKTeX/tex/generic/uniquecounter/uniquecounter.sty" 1576434012 7008 f92eaa0a3872ed622bbf538217cd2ab7 ""
   "C:/Users/igna-/AppData/Local/Programs/MiKTeX/tex/latex/a4wide/a4wide.sty" 1294164521 1635 717cb53b4323c7ff0cf7f675b11dfe05 ""
   "C:/Users/igna-/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/amsfonts.sty" 1358197772 5949 3f3fd50a8cc94c3d4cbf4fc66cd3df1c ""
+  "C:/Users/igna-/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/amssymb.sty" 1358197772 13829 94730e64147574077f8ecfea9bb69af4 ""
   "C:/Users/igna-/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/umsa.fd" 1358197772 961 6518c6525a34feb5e8250ffa91731cff ""
   "C:/Users/igna-/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/umsb.fd" 1358197772 961 d02606146ba5601b5645f987c92e6193 ""
   "C:/Users/igna-/AppData/Local/Programs/MiKTeX/tex/latex/amsmath/amsbsy.sty" 1601808549 2283 ca7ce284ab93c8eecdc6029dc5ccbd73 ""
@@ -190,13 +192,13 @@
   "C:/Users/igna-/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1575571282 9715 b051d5b493d9fe5f4bc251462d039e5f ""
   "C:/Users/igna-/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/igna-/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1463135581 57049 34128738f682d033422ca125f82e5d62 ""
-  "ProbaB.tex" 1642969336 28251 fd51ca51f65149d23337c6be12256ed4 ""
-  "build/ProbaB.aux" 1642969350 36399 95fecff7a4ff9f4e490fe7c8673db30c "pdflatex"
-  "build/ProbaB.toc" 1642969350 6799 0e45924020d7acc0a442cdd5af044ca4 "pdflatex"
+  "ProbaB.tex" 1643070776 32702 2b1e855e33ec74b2679aa5185696e040 ""
+  "build/ProbaB.aux" 1643070793 41151 9c9055b4119c1aa58a27dc798556def9 "pdflatex"
+  "build/ProbaB.toc" 1643070793 7769 f1cd820df702e4fd82d65f6e3380191e "pdflatex"
   "build/logofiuba.jpg" 1642105415 148043 b245903f0ff9bf6da05e9d094cd77b60 ""
-  "c:/Users/igna-/OneDrive/Escritorio/FIUBA/Proba/MI APUNTE/Apunte-ProbaB/ProbaB.tex" 1642969336 28251 fd51ca51f65149d23337c6be12256ed4 ""
+  "c:/Users/igna-/OneDrive/Escritorio/FIUBA/Proba/MI APUNTE/Apunte-ProbaB/ProbaB.tex" 1643070776 32702 2b1e855e33ec74b2679aa5185696e040 ""
   (generated)
-  "build/ProbaB.pdf"
-  "build/ProbaB.aux"
   "build/ProbaB.log"
+  "build/ProbaB.aux"
   "build/ProbaB.toc"
+  "build/ProbaB.pdf"

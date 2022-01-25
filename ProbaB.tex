@@ -13,6 +13,8 @@
 \usepackage{tikz}
 \usepackage{amsfonts}
 \usepackage{amsmath}
+\usepackage{amssymb}
+
 
 \pagestyle{fancy} % Encabezado y pie de página
 \fancyhf{}
@@ -662,5 +664,65 @@ Desarrollando el cuadrado y aplicando propiedades de esperanza condicional:
 \begin{equation*}
     Var(Y) = E[Var(Y|X)] + Var(E[Y|X])
 \end{equation*}
-
+\section{Proceso de Bernoulli}
+\subsection{Condiciones}
+\begin{enumerate}
+    \item Dicotomia (Sucede un evento, o no sucede)
+    \item Probabilidad constante
+    \item Los experimentos son independientes
+\end{enumerate}
+Entonces tendremos una V.A. $X \backsim Ber(p)$ y $X_{1},X_{2},...$ una sucesion de V.A.
+tales que \\ $X_{1},X_{2},...\backsim X$
+\subsection{Variables definibles}
+Las variables definibles en este tipo de proceso son:
+\begin{enumerate}
+    \item $Y$:'Cantidad de exitos en $n$ ensayos de Bernoulli', donde $Y \backsim B(n,p)$
+    \item $W$:'Cantidad de ensayos hasta lograr $k$ exitos', donde $W \backsim Pas(k,p)$
+    \item $N$:'Cantidad de ensayos hasta el $1^{o}$ exito', donde $N \backsim \mathcal{G}(p)$
+\end{enumerate}
+\section{Proceso de Poisson (puntual)}
+Un proceso puntual aleatorio es un conjunto enumerable de puntos aleatorios ubicado sobre la recta real.
+En la mayoria de las aplicaciones un punto de un proceso puntual es el instante en que ocurre algun 
+evento, motivo por el cual los puntos tambien se llaman eventos o arribos.\\
+Llamemos $N(t)$ al numero d eventos durante un intervalo especifico $[0,t]$
+\begin{enumerate}
+    \item El numero de eventos durante intervalos de tiempo no superpuestos son variables aleatorias independientes ($N_{1}$ y $N_{2}$ son independientes).
+    \item La probabilidad de cada evento particular es la misma para todos los intervalos de longitud $t$, independientemente de la ubicacion de cada intervalo y de la historia pasada del sistema ($N_{1}$ y $N_{2}$ tienen la misma distribucion de probabilidades).
+    \item La probabilidad de obtener 2 o mas eventos en un intervalo lo suficientemente chico es despreciable.
+\end{enumerate}
+La variable $N(t)$ toma los valores posibles ${0,1,2,...} = \mathbb{N} \cup {0}$ y su funcion de probabilidad esta dada por
+\begin{equation*}
+    p_{N}(n) = \frac{(\lambda t)^{n}}{n!} e^{-\lambda t}
+\end{equation*}
+donde $\lambda > 0$. Entonces $N(t)$ tiene distribucion de Poisson de parametro $\mu = \lambda t$
+\subsection{Variables definibles}
+En un Proceso de Poisson de intensidad o tasa de ocurrencia $\lambda$ (PP$(\lambda)$):
+\begin{enumerate}
+    \item $N(t)$: 'Cantidad de eventos en el intervalo de longitud $t$', donde $N(t) \backsim Poi(\lambda t)$
+    \item $T$: 'Tiempo entre dos eventos consecutivos', donde $T \backsim Exp(\lambda)$
+    \item $G$: 'Tiempor hasta el $k$-esimo evento de Poisson', donde $G \backsim \Gamma(k,\lambda)$
+\end{enumerate}
+\subsection{Propiedades}
+\subsubsection{Adelgazamiento}
+Sea $\{N(t);t>0\}$ un proceso de Poisson de tasa $\lambda$. Cada vez que ocurre un evento se lo clasifica como de tipo $I$ o de tipo 
+$II$. Mas aun se clasifica como de tipo $I$ con probabilidad $p$ o como de tipo $II$ con probabilidad $(1-p)$, independientemente de todos los demas arribos.
+Sean $N_{I}(t)$ y $N_{II}(t)$ la cantidad de arribos de tipo $I$ y $II$ que ocurren en $[0,t]$. Es claro que $N(t) = N_{I}(t) + N_{II}(t)$. Estos dos nuevos procesos son independientes.
+\subsubsection{Superposicion de procesos de Poisson}
+Sean $\{N_{1}(t),t\geq0\}$ y $\{N_{2}(t),t\geq0\}$ procesos de Poisson independientes de tasas $\lambda_{1}$ y $\lambda_{2}$ respectivamente. Entonces $N(t)=N_{1}(t)+N_{2}(t)$ 
+define un proceso de Poisson de tasa $\lambda = \lambda_{1} + \lambda_{2}$.
+\subsection{Teorema}
+Bajo la condicion de que ocurrieron exactamente $n$ arribos en el intervalo $[0,t]$ los tiempos de los $n$ arribos $S_{1},S_{2},...,S_{n}$, considerados como variables aleatorias desordenadas, son independientes y estan distribuidas
+uniformemente spbre $[0,t]$
+\section{Distribucion Normal}
+La V.A. X que toma todos los valores reales $-\infty < x< \infty$ tiene una distribucion normal de parametros $\mu \in \mathbb{R} $ y $\sigma^{2}>0$
+si su funcion de densidad es de la forma:
+\begin{equation*}
+    f_{X}(x) = \frac{1}{\sqrt{2\pi\sigma^{2}}}e^{\frac{-1}{2\sigma^{2}}(x-\mu)^{2}}
+\end{equation*}
+$\rightarrow X \backsim \mathcal{N}(\mu,\sigma^{2})$\\
+Con $E[X]=\mu$ y $Var(X)=\sigma^{2}$
+\subsection{Metodo de calculo de probabilidades}
+Sabemos que $Z \backsim \mathcal{N}(0,1) \rightarrow P(Z \leq z) = \Phi(z)$\\
+Si $X \backsim \mathcal{N}(\mu,\sigma^{2})$ busco una transformacion.\\
+Se propone $Z = \frac{X-\mu}{\sigma}$ de manera tal que si $X \backsim \mathcal{N}(\mu,\sigma^{2}) \rightarrow Z \backsim \mathcal{N}(0,1)$ 
 \end{document}
