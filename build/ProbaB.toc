@@ -1,86 +1,126 @@
 \babel@toc {spanish}{}
-\contentsline {section}{\numberline {1}Axiomas de Probabilidad}{3}{section.1}%
-\contentsline {section}{\numberline {2}Experimentos con resultados equiprobables}{3}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Laplace}{3}{subsection.2.1}%
-\contentsline {section}{\numberline {3}Conteo}{3}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Regla del producto}{3}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Permutaciones}{3}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Variaciones}{3}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Combinaciones}{3}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Bolas y urnas}{4}{subsection.3.5}%
-\contentsline {section}{\numberline {4}Teoremas sobre conjuntos de eventos}{4}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Teorema 1}{4}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Teorema 2}{4}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Teorema $\sigma $-aditividad}{4}{subsection.4.3}%
-\contentsline {section}{\numberline {5}Relaciones entre dos eventos: probabilidad condicional e independencia}{4}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Probabilidad condicional}{4}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Independencia de eventos}{5}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Teorema de Bayes}{5}{subsection.5.3}%
-\contentsline {section}{\numberline {6}Variables aleatorias}{5}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Funcion de distribucion}{5}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Soporte de una V.A}{6}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Variables aleatorias discretas}{6}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Variables aleatorias continuas}{6}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}Eventos equivalentes}{6}{subsection.6.5}%
-\contentsline {section}{\numberline {7}Modelos continuos: distribuciones notables}{7}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Distribucion Uniforme}{7}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Distribucion exponencial}{7}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Funcion de Riesgo (para V.A.C.)}{7}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}Distribucion Gamma}{7}{subsection.7.4}%
-\contentsline {subsection}{\numberline {7.5}Distribucion normal estandar}{7}{subsection.7.5}%
-\contentsline {subsection}{\numberline {7.6}Cuantil de una V.A}{8}{subsection.7.6}%
-\contentsline {section}{\numberline {8}Funciones de variables aleatorias}{8}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Simulacion}{8}{subsection.8.1}%
-\contentsline {section}{\numberline {9}Truncamiento}{8}{section.9}%
-\contentsline {section}{\numberline {10}Vectores Aleatorios}{8}{section.10}%
-\contentsline {subsection}{\numberline {10.1}Funcion de distribucion de un vector aleatorio}{9}{subsection.10.1}%
-\contentsline {subsection}{\numberline {10.2}Propiedades del vector aleatorio ($\mathbb {X} = (X,Y)$)}{9}{subsection.10.2}%
-\contentsline {subsection}{\numberline {10.3}Funcion de probabilidad de vectores aleatorios discretos (probabilidad conjunta)}{9}{subsection.10.3}%
-\contentsline {subsubsection}{\numberline {10.3.1}Funciones de probabilidad marginales y de conjuntos}{9}{subsubsection.10.3.1}%
-\contentsline {subsection}{\numberline {10.4}Funcion de densidad de un vector aleatorio continuo}{9}{subsection.10.4}%
-\contentsline {subsubsection}{\numberline {10.4.1}Funciones de densidad marginales}{9}{subsubsection.10.4.1}%
-\contentsline {subsection}{\numberline {10.5}Independecia de vectores aleatorios}{10}{subsection.10.5}%
-\contentsline {subsubsection}{\numberline {10.5.1}Propiedades de la independencia de vectores aleatorios}{10}{subsubsection.10.5.1}%
-\contentsline {section}{\numberline {11}Momentos}{10}{section.11}%
-\contentsline {subsection}{\numberline {11.1}Esperanza}{10}{subsection.11.1}%
-\contentsline {subsubsection}{\numberline {11.1.1}Propiedades}{10}{subsubsection.11.1.1}%
-\contentsline {subsubsection}{\numberline {11.1.2}CASO GENERAL}{10}{subsubsection.11.1.2}%
-\contentsline {subsection}{\numberline {11.2}Esperanza condicional}{11}{subsection.11.2}%
-\contentsline {subsubsection}{\numberline {11.2.1}Propiedad}{11}{subsubsection.11.2.1}%
-\contentsline {subsection}{\numberline {11.3}Varianza}{11}{subsection.11.3}%
-\contentsline {subsubsection}{\numberline {11.3.1}Propiedad}{11}{subsubsection.11.3.1}%
-\contentsline {subsubsection}{\numberline {11.3.2}Desvio estandar}{11}{subsubsection.11.3.2}%
-\contentsline {subsubsection}{\numberline {11.3.3}Mediana}{11}{subsubsection.11.3.3}%
-\contentsline {subsubsection}{\numberline {11.3.4}Moda}{11}{subsubsection.11.3.4}%
-\contentsline {subsection}{\numberline {11.4}Esperanza de una funcion de un vector aleatorio}{11}{subsection.11.4}%
-\contentsline {subsubsection}{\numberline {11.4.1}Propiedades de Orden}{12}{subsubsection.11.4.1}%
-\contentsline {subsubsection}{\numberline {11.4.2}Propiedades importantes}{12}{subsubsection.11.4.2}%
-\contentsline {subsection}{\numberline {11.5}Covarinza}{12}{subsection.11.5}%
-\contentsline {subsubsection}{\numberline {11.5.1}Propiedades de la Covarinza}{12}{subsubsection.11.5.1}%
-\contentsline {subsubsection}{\numberline {11.5.2}Coeficiente de correlacion}{12}{subsubsection.11.5.2}%
-\contentsline {section}{\numberline {12}Prediccion}{12}{section.12}%
-\contentsline {subsection}{\numberline {12.1}Los mejores predictores}{13}{subsection.12.1}%
-\contentsline {section}{\numberline {13}Desigualdades}{13}{section.13}%
-\contentsline {subsection}{\numberline {13.1}Desigualdad de Markov}{13}{subsection.13.1}%
-\contentsline {subsection}{\numberline {13.2}Desigualdad de Tchevychev}{13}{subsection.13.2}%
-\contentsline {section}{\numberline {14}Funcion de variable aleatoria (cambio de variable)}{13}{section.14}%
-\contentsline {subsection}{\numberline {14.1}Metodo de eventos equivalentes}{13}{subsection.14.1}%
-\contentsline {subsection}{\numberline {14.2}Metodo del Jacobiano (para vectores aleatorios)}{13}{subsection.14.2}%
-\contentsline {section}{\numberline {15}Variables aleatorias condicionadas}{14}{section.15}%
-\contentsline {subsection}{\numberline {15.1}Propiedades}{14}{subsection.15.1}%
-\contentsline {section}{\numberline {16}Mezcla de variables aleatorias: Bayes para la mezcla}{14}{section.16}%
-\contentsline {section}{\numberline {17}Esperanza condicional}{14}{section.17}%
-\contentsline {subsection}{\numberline {17.1}Propiedades}{15}{subsection.17.1}%
-\contentsline {section}{\numberline {18}Varianza Condicional}{15}{section.18}%
-\contentsline {subsection}{\numberline {18.1}Propiedad (Pitagoras)}{15}{subsection.18.1}%
-\contentsline {section}{\numberline {19}Proceso de Bernoulli}{15}{section.19}%
-\contentsline {subsection}{\numberline {19.1}Condiciones}{15}{subsection.19.1}%
-\contentsline {subsection}{\numberline {19.2}Variables definibles}{16}{subsection.19.2}%
-\contentsline {section}{\numberline {20}Proceso de Poisson (puntual)}{16}{section.20}%
-\contentsline {subsection}{\numberline {20.1}Variables definibles}{16}{subsection.20.1}%
-\contentsline {subsection}{\numberline {20.2}Propiedades}{16}{subsection.20.2}%
-\contentsline {subsubsection}{\numberline {20.2.1}Adelgazamiento}{16}{subsubsection.20.2.1}%
-\contentsline {subsubsection}{\numberline {20.2.2}Superposicion de procesos de Poisson}{16}{subsubsection.20.2.2}%
-\contentsline {subsection}{\numberline {20.3}Teorema}{17}{subsection.20.3}%
-\contentsline {section}{\numberline {21}Distribucion Normal}{17}{section.21}%
-\contentsline {subsection}{\numberline {21.1}Metodo de calculo de probabilidades}{17}{subsection.21.1}%
+\contentsline {section}{\numberline {1}Axiomas de Probabilidad}{4}{section.1}%
+\contentsline {section}{\numberline {2}Experimentos con resultados equiprobables}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Laplace}{4}{subsection.2.1}%
+\contentsline {section}{\numberline {3}Conteo}{4}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Regla del producto}{4}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Permutaciones}{4}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Variaciones}{4}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Combinaciones}{4}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Bolas y urnas}{5}{subsection.3.5}%
+\contentsline {section}{\numberline {4}Teoremas sobre conjuntos de eventos}{5}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Teorema 1}{5}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Teorema 2}{5}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Teorema $\sigma $-aditividad}{5}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Relaciones entre dos eventos: probabilidad condicional e independencia}{5}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Probabilidad condicional}{5}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Independencia de eventos}{6}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Teorema de Bayes}{6}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Variables aleatorias}{6}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Funcion de distribucion}{6}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Soporte de una V.A}{7}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Variables aleatorias discretas}{7}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Variables aleatorias continuas}{7}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Eventos equivalentes}{7}{subsection.6.5}%
+\contentsline {section}{\numberline {7}Modelos continuos: distribuciones notables}{8}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Distribucion Uniforme}{8}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Distribucion exponencial}{8}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Funcion de Riesgo (para V.A.C.)}{8}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Distribucion Gamma}{8}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Distribucion normal estandar}{8}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}Cuantil de una V.A}{9}{subsection.7.6}%
+\contentsline {section}{\numberline {8}Funciones de variables aleatorias}{9}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Simulacion}{9}{subsection.8.1}%
+\contentsline {section}{\numberline {9}Truncamiento}{9}{section.9}%
+\contentsline {section}{\numberline {10}Vectores Aleatorios}{9}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Funcion de distribucion de un vector aleatorio}{10}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Propiedades del vector aleatorio ($\mathbb {X} = (X,Y)$)}{10}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}Funcion de probabilidad de vectores aleatorios discretos (probabilidad conjunta)}{10}{subsection.10.3}%
+\contentsline {subsubsection}{\numberline {10.3.1}Funciones de probabilidad marginales y de conjuntos}{10}{subsubsection.10.3.1}%
+\contentsline {subsection}{\numberline {10.4}Funcion de densidad de un vector aleatorio continuo}{10}{subsection.10.4}%
+\contentsline {subsubsection}{\numberline {10.4.1}Funciones de densidad marginales}{10}{subsubsection.10.4.1}%
+\contentsline {subsection}{\numberline {10.5}Independecia de vectores aleatorios}{11}{subsection.10.5}%
+\contentsline {subsubsection}{\numberline {10.5.1}Propiedades de la independencia de vectores aleatorios}{11}{subsubsection.10.5.1}%
+\contentsline {section}{\numberline {11}Momentos}{11}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Esperanza}{11}{subsection.11.1}%
+\contentsline {subsubsection}{\numberline {11.1.1}Propiedades}{11}{subsubsection.11.1.1}%
+\contentsline {subsubsection}{\numberline {11.1.2}CASO GENERAL}{11}{subsubsection.11.1.2}%
+\contentsline {subsection}{\numberline {11.2}Esperanza condicional}{12}{subsection.11.2}%
+\contentsline {subsubsection}{\numberline {11.2.1}Propiedad}{12}{subsubsection.11.2.1}%
+\contentsline {subsection}{\numberline {11.3}Varianza}{12}{subsection.11.3}%
+\contentsline {subsubsection}{\numberline {11.3.1}Propiedad}{12}{subsubsection.11.3.1}%
+\contentsline {subsubsection}{\numberline {11.3.2}Desvio estandar}{12}{subsubsection.11.3.2}%
+\contentsline {subsubsection}{\numberline {11.3.3}Mediana}{12}{subsubsection.11.3.3}%
+\contentsline {subsubsection}{\numberline {11.3.4}Moda}{12}{subsubsection.11.3.4}%
+\contentsline {subsection}{\numberline {11.4}Esperanza de una funcion de un vector aleatorio}{12}{subsection.11.4}%
+\contentsline {subsubsection}{\numberline {11.4.1}Propiedades de Orden}{13}{subsubsection.11.4.1}%
+\contentsline {subsubsection}{\numberline {11.4.2}Propiedades importantes}{13}{subsubsection.11.4.2}%
+\contentsline {subsection}{\numberline {11.5}Covarinza}{13}{subsection.11.5}%
+\contentsline {subsubsection}{\numberline {11.5.1}Propiedades de la Covarinza}{13}{subsubsection.11.5.1}%
+\contentsline {subsubsection}{\numberline {11.5.2}Coeficiente de correlacion}{13}{subsubsection.11.5.2}%
+\contentsline {section}{\numberline {12}Prediccion}{13}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Los mejores predictores}{14}{subsection.12.1}%
+\contentsline {section}{\numberline {13}Desigualdades}{14}{section.13}%
+\contentsline {subsection}{\numberline {13.1}Desigualdad de Markov}{14}{subsection.13.1}%
+\contentsline {subsection}{\numberline {13.2}Desigualdad de Tchevychev}{14}{subsection.13.2}%
+\contentsline {section}{\numberline {14}Funcion de variable aleatoria (cambio de variable)}{14}{section.14}%
+\contentsline {subsection}{\numberline {14.1}Metodo de eventos equivalentes}{14}{subsection.14.1}%
+\contentsline {subsection}{\numberline {14.2}Metodo del Jacobiano (para vectores aleatorios)}{14}{subsection.14.2}%
+\contentsline {section}{\numberline {15}Variables aleatorias condicionadas}{15}{section.15}%
+\contentsline {subsection}{\numberline {15.1}Propiedades}{15}{subsection.15.1}%
+\contentsline {section}{\numberline {16}Mezcla de variables aleatorias: Bayes para la mezcla}{15}{section.16}%
+\contentsline {section}{\numberline {17}Esperanza condicional}{15}{section.17}%
+\contentsline {subsection}{\numberline {17.1}Propiedades}{16}{subsection.17.1}%
+\contentsline {section}{\numberline {18}Varianza Condicional}{16}{section.18}%
+\contentsline {subsection}{\numberline {18.1}Propiedad (Pitagoras)}{16}{subsection.18.1}%
+\contentsline {section}{\numberline {19}Proceso de Bernoulli}{16}{section.19}%
+\contentsline {subsection}{\numberline {19.1}Condiciones}{16}{subsection.19.1}%
+\contentsline {subsection}{\numberline {19.2}Variables definibles}{17}{subsection.19.2}%
+\contentsline {section}{\numberline {20}Proceso de Poisson (puntual)}{17}{section.20}%
+\contentsline {subsection}{\numberline {20.1}Variables definibles}{17}{subsection.20.1}%
+\contentsline {subsection}{\numberline {20.2}Propiedades}{17}{subsection.20.2}%
+\contentsline {subsubsection}{\numberline {20.2.1}Adelgazamiento}{17}{subsubsection.20.2.1}%
+\contentsline {subsubsection}{\numberline {20.2.2}Superposicion de procesos de Poisson}{17}{subsubsection.20.2.2}%
+\contentsline {subsection}{\numberline {20.3}Teorema}{18}{subsection.20.3}%
+\contentsline {section}{\numberline {21}Distribucion Normal}{18}{section.21}%
+\contentsline {subsection}{\numberline {21.1}Metodo de calculo de probabilidades}{18}{subsection.21.1}%
+\contentsline {subsubsection}{\numberline {21.1.1}Propiedad}{18}{subsubsection.21.1.1}%
+\contentsline {section}{\numberline {22}Distribucion Normal Multivariada}{18}{section.22}%
+\contentsline {subsection}{\numberline {22.1}Propiedades}{18}{subsection.22.1}%
+\contentsline {subsection}{\numberline {22.2}Teorema}{19}{subsection.22.2}%
+\contentsline {section}{\numberline {23}Teoremas Limites}{19}{section.23}%
+\contentsline {subsection}{\numberline {23.1}Ley de los grandes numeros}{19}{subsection.23.1}%
+\contentsline {subsection}{\numberline {23.2}Ley debil de los grandes numeros}{19}{subsection.23.2}%
+\contentsline {section}{\numberline {24}Teorema Central del Limite (TCL)}{19}{section.24}%
+\contentsline {section}{\numberline {25}Resumen de sumas de V.A idd}{19}{section.25}%
+\contentsline {section}{\numberline {26}Estadistica}{19}{section.26}%
+\contentsline {subsection}{\numberline {26.1}Concepto de muestra}{20}{subsection.26.1}%
+\contentsline {section}{\numberline {27}Modelos parametricos}{20}{section.27}%
+\contentsline {subsection}{\numberline {27.1}Familia parametrica de distribuciones}{20}{subsection.27.1}%
+\contentsline {subsection}{\numberline {27.2}Ejemplos de familias parametricas}{20}{subsection.27.2}%
+\contentsline {subsection}{\numberline {27.3}Familia Regular}{20}{subsection.27.3}%
+\contentsline {subsection}{\numberline {27.4}Familias exponenciales}{20}{subsection.27.4}%
+\contentsline {section}{\numberline {28}Funcion de Verosimilitud}{21}{section.28}%
+\contentsline {section}{\numberline {29}Estadistico}{21}{section.29}%
+\contentsline {subsection}{\numberline {29.1}Estadisticos Suficientes}{21}{subsection.29.1}%
+\contentsline {subsection}{\numberline {29.2}Teorema de Factorizacion}{21}{subsection.29.2}%
+\contentsline {subsection}{\numberline {29.3}Teorema}{21}{subsection.29.3}%
+\contentsline {section}{\numberline {30}Estimadores}{21}{section.30}%
+\contentsline {subsection}{\numberline {30.1}Metodo de maxima verosimilitud}{22}{subsection.30.1}%
+\contentsline {subsection}{\numberline {30.2}Principio de invariancia}{22}{subsection.30.2}%
+\contentsline {subsection}{\numberline {30.3}Bondad de los estimadores}{22}{subsection.30.3}%
+\contentsline {subsection}{\numberline {30.4}Estimador Insesgado}{22}{subsection.30.4}%
+\contentsline {subsubsection}{\numberline {30.4.1}Propiedad}{22}{subsubsection.30.4.1}%
+\contentsline {subsubsection}{\numberline {30.4.2}Estimador asintoticamente insesgado}{22}{subsubsection.30.4.2}%
+\contentsline {subsection}{\numberline {30.5}Estimador consistente}{23}{subsection.30.5}%
+\contentsline {subsubsection}{\numberline {30.5.1}Teorema}{23}{subsubsection.30.5.1}%
+\contentsline {subsubsection}{\numberline {30.5.2}Consistencia media cuadratica}{23}{subsubsection.30.5.2}%
+\contentsline {subsection}{\numberline {30.6}Estimadores asintoticamente normales}{23}{subsection.30.6}%
+\contentsline {subsubsection}{\numberline {30.6.1}Teorema}{23}{subsubsection.30.6.1}%
+\contentsline {section}{\numberline {31}Distribuciones continuas importantes}{23}{section.31}%
+\contentsline {subsection}{\numberline {31.1}Chi-Cuadrado}{23}{subsection.31.1}%
+\contentsline {subsubsection}{\numberline {31.1.1}Teorema}{23}{subsubsection.31.1.1}%
+\contentsline {subsubsection}{\numberline {31.1.2}Corolario}{23}{subsubsection.31.1.2}%
+\contentsline {subsection}{\numberline {31.2}t de Student}{24}{subsection.31.2}%
+\contentsline {subsection}{\numberline {31.3}Distribucion F de Fisher-Snedecor}{24}{subsection.31.3}%
+\contentsline {subsection}{\numberline {31.4}Teorema}{24}{subsection.31.4}%

@@ -1,9 +1,10 @@
 # Fdb version 3
-["pdflatex"] 1643070781 "c:/Users/igna-/OneDrive/Escritorio/FIUBA/Proba/MI APUNTE/Apunte-ProbaB/ProbaB.tex" "build/ProbaB.pdf" "ProbaB" 1643070794
+["pdflatex"] 1643485867 "c:/Users/igna-/OneDrive/Escritorio/FIUBA/Proba/MI APUNTE/Apunte-ProbaB/ProbaB.tex" "build/ProbaB.pdf" "ProbaB" 1643485878
   "C:/Users/igna-/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1000.pk" 1620591614 25420 64eac522fe98e4d1be135d3a77df5898 ""
   "C:/Users/igna-/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1620591616 31952 29d87889fe19e6a9ff9e63cf5418f2ce ""
   "C:/Users/igna-/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1440.pk" 1620591618 40136 4825f4afa7df5d232a968ddab22d0aea ""
   "C:/Users/igna-/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx2488.pk" 1620591624 72288 6523fa8779897eab0381ec8b4022fab1 ""
+  "C:/Users/igna-/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0500.pk" 1621810724 12520 d73b3a56afa8321012934b05db8cc468 ""
   "C:/Users/igna-/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1000.pk" 1620591620 23808 bb189d31ff203bd5d28a8670735e62a5 ""
   "C:/Users/igna-/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1440.pk" 1620591622 34320 ff11a420f80d2f640e386431c280f4fb ""
   "C:/Users/igna-/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecti1000.pk" 1628267511 31892 2f2800c3e4cb4eb963190f0d18cdd4ff ""
@@ -192,13 +193,13 @@
   "C:/Users/igna-/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1575571282 9715 b051d5b493d9fe5f4bc251462d039e5f ""
   "C:/Users/igna-/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/igna-/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1463135581 57049 34128738f682d033422ca125f82e5d62 ""
-  "ProbaB.tex" 1643070776 32702 2b1e855e33ec74b2679aa5185696e040 ""
-  "build/ProbaB.aux" 1643070793 41151 9c9055b4119c1aa58a27dc798556def9 "pdflatex"
-  "build/ProbaB.toc" 1643070793 7769 f1cd820df702e4fd82d65f6e3380191e "pdflatex"
+  "ProbaB.tex" 1643485861 48757 d95e537a5fbaba340e1b0e2f874b10a7 ""
+  "build/ProbaB.aux" 1643485876 58523 3fd687a877bfb5e081ddd14edf772bf7 "pdflatex"
+  "build/ProbaB.toc" 1643485876 11323 d69b8871c09793ef82ad744a1df8c989 "pdflatex"
   "build/logofiuba.jpg" 1642105415 148043 b245903f0ff9bf6da05e9d094cd77b60 ""
-  "c:/Users/igna-/OneDrive/Escritorio/FIUBA/Proba/MI APUNTE/Apunte-ProbaB/ProbaB.tex" 1643070776 32702 2b1e855e33ec74b2679aa5185696e040 ""
+  "c:/Users/igna-/OneDrive/Escritorio/FIUBA/Proba/MI APUNTE/Apunte-ProbaB/ProbaB.tex" 1643485861 48757 d95e537a5fbaba340e1b0e2f874b10a7 ""
   (generated)
+  "build/ProbaB.toc"
   "build/ProbaB.log"
   "build/ProbaB.aux"
-  "build/ProbaB.toc"
   "build/ProbaB.pdf"

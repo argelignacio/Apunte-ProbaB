@@ -725,4 +725,246 @@ Con $E[X]=\mu$ y $Var(X)=\sigma^{2}$
 Sabemos que $Z \backsim \mathcal{N}(0,1) \rightarrow P(Z \leq z) = \Phi(z)$\\
 Si $X \backsim \mathcal{N}(\mu,\sigma^{2})$ busco una transformacion.\\
 Se propone $Z = \frac{X-\mu}{\sigma}$ de manera tal que si $X \backsim \mathcal{N}(\mu,\sigma^{2}) \rightarrow Z \backsim \mathcal{N}(0,1)$ 
+\subsubsection{Propiedad}
+Si $X \backsim \mathcal{N}(\mu,\sigma^{2})$ entonces:
+\begin{eqnarray*}
+    P(\mu - \sigma < X < \mu + \sigma) = P(-1<Z<1) &=& \Phi(1)- \Phi(-1) = \Phi(1)- (1- \Phi(1)) = 2\Phi(1) -1 \\
+    P(\mu - 2\sigma < X < \mu + 2\sigma) = 2\Phi(2)-1 \\
+    P(\mu - 3\sigma < X < \mu + 3\sigma) = 2\Phi(2)-1
+\end{eqnarray*}
+\section{Distribucion Normal Multivariada}
+Se dice que el vector aleatorio $X=(x_{1},...,X_{p})$ tiene distribucion normal multivariada de dimension $p$,
+de parametros $\mu \in \mathbb{R}^{p}$ y $\sum \in \mathbb{R}^{p\times p}$ (simetrica y definida positiva)
+$X \backsim \mathcal{N}_{p}(\mu, \Sigma)$, si su funcion de densidad esta dada por:
+\begin{equation*}
+    f_{X}(x) = \frac{1}{(2\pi)^{p/2}|\Sigma|^{1/2}}\cdot exp\{\frac{1}{2}(x-\mu)^{T}\Sigma^{-1}(x-\mu)\}
+\end{equation*}
+Con $X$ y $x$ vectores en $\mathbb{R}^{p}$.\\
+Definiendo $\mu$ y $\Sigma$ (Matriz de Covarinzas) como:
+\begin{equation*}
+    \mu = \begin{bmatrix}
+        E(X_{1})\\
+        E(X_{2})\\
+        \vdots\\
+        E(X_{p})\\
+    \end{bmatrix} 
+    \Sigma = \begin{bmatrix}
+        Var(X_{1}) = Cov(X_{1},X_{1}) & Cov(X_{1},X_{2}) & \cdots & Cov(X_{1},X_{p}))\\
+        \vdots & \cdots & \cdots & \vdots \\
+        Cov(X_{p},X_{1}) & \cdots & \cdots &  Cov(X_{p},X_{p}) = Var(X_{p})
+    \end{bmatrix}
+\end{equation*}
+\subsection{Propiedades}
+\begin{enumerate}
+    \item Si $X \backsim \mathcal{N}_{p}(0,diag(\lambda_{1},...,\lambda_{p}))$ entonces $X_{1},...,X_{p}$ son independientes y $X_{i} \backsim \mathcal{N}(0,\lambda_{i})$.
+    \item Si $X \backsim \mathcal{N}_{p}(\mu,\Sigma)$ y $A \in \mathbb{R}^{p \times p}$ no singular entonces $AX + b \backsim \mathcal{N}_{p}(A\mu+b,A\Sigma A^{T})$.
+\end{enumerate}
+\subsection{Teorema}
+Sean $X_{1},...,X_{n}$ V.A. aleatorias independientes con $X_{i} \backsim \mathcal{N}(\mu_{i}, \sigma^{2}_{i})$, $i=1,...,n$ y sea $Y = \sum_{i=1}^n a_{i}X_{i}$
+,entonces $Y$ tendra una distribucion normal de parametros $\mu_{Y}  = \sum_{i=1}^{n} a_{i}\mu_{i}$ y 
+$\sigma_{Y}^{2} = \Sigma_{i=1}^{n}a_{i}^{2}\sigma_{i}^{2}$
+\section{Teoremas Limites}
+\subsection{Ley de los grandes numeros}
+Si se tiene una sucesion de V.A. $(X_{n})n \geq 1$ independientes con $E[X_{i}] = \mu < \infty$ y $Var(X_{i}) = \sigma^{2} < \infty, \bar{X_{n}} = \frac{1}{n}\sum_{i=1}^{n}X_{i}$ entonces $\bar{X} \rightarrow \mu$.\\
+\subsection{Ley debil de los grandes numeros}
+\begin{equation*}
+    P(|\bar{X_{n}} - \mu| > \varepsilon) \rightarrow_{n \rightarrow \infty} 0
+\end{equation*}
+Entonces $E(\bar{X_{n}}) = \mu$, $Var(\bar{X_{n}}) = \frac{\sigma^{2}}{n}$
+\section{Teorema Central del Limite (TCL)}
+Sean $(X_{n})_{n \geq 1}$ una sucesion de V.A. indep. e identicamente distribuidas con $E(X_{i}) = \mu < \infty$ y $Var(X_{i}) = \sigma^{2} < \infty$, $i=1,...,n$, entonces (bajo ciertas condiciones generales):
+\begin{equation*}
+    \frac{\sum_{i=1}^{n}X_{i} - n\cdot\mu}{\sqrt{n\cdot \sigma^{2}}} \rightarrow Z \backsim \mathcal{N}(0,1)
+\end{equation*}
+Es decir:
+\begin{equation*}
+    P( \frac{\sum_{i=1}^{n}X_{i} - n\cdot\mu}{\sqrt{n\cdot \sigma^{2}}}\leq t) \rightarrow_{n\rightarrow \infty} \Phi(t)
+\end{equation*}
+OBS: Saber siempre que esto es una aproximacion!
+\section{Resumen de sumas de V.A idd}
+\begin{enumerate}
+    \item Si $X_{1},...,X_{n} \backsim Ber(p) \rightarrow \sum_{i=1}^{n} X_{i} \backsim  B(n,p)$
+    \item Si $X_{1},...,X_{n} \backsim G(p) \rightarrow \sum_{i=1}^{n} X_{i} \backsim  Pas(n,p)$
+    \item Si $X_{1},...,X_{n} \backsim Exp(\lambda) \rightarrow \sum_{i=1}^{n} X_{i} \backsim  \Gamma(n,\lambda)$
+    \item Si $X_{1},...,X_{n} \backsim \author{}(p) \rightarrow \sum_{i=1}^{n} X_{i} \backsim  B(n,p)$
+\end{enumerate}
+\section{Estadistica}
+Inferencia: Construir un modelo sobre la base de datos experimentales y extraer conclusiones.\\
+Totalidad de los resultados experimentales posibles$\rightarrow$ POBLACION. \\ 
+Conjunto de datos que se obtiene de realizar el experimento una cierta cantidad de veces $\rightarrow$ MUESTRA. 
+\subsection{Concepto de muestra}
+Variable aleatoria $X$, definida sobre $(\Omega,\mathcal{A},P)$ con distribucion $F_{X}(x) = P(X \leq x)$ que se desconoce (al menos parcialmente)\\
+$X \rightarrow $ "Observable" de experimento aleatorio.\\
+Quiero saber como se comporta la POBLACION.\\
+Muestra aleatoria: Sucesion de variables independientes $X_{1},X_{2},...$ todas iid a $X$.\\
+Tendremos que $F_{X_{1},...,X_{n}}(x_{1},...,x_{n}) = P(X_{1} \leq x_{1},...,X_{n} \leq x_{n}) = \prod_{i=1}^{n} F_{X}(x_{i}), \forall n \in \mathbb{N}$\\
+Notacion:\\
+$\underline{X} = (X_{1},...,X_{n})$ muestra aleatoria de tamaño n con $X_{1},...,X_{n}$.\\
+$\underline{x} = (x_{1},...,x_{n})$ $n$ observaciones obtenidas al realizar $n$ repeticiones independientes de tamaño $n$.
+\section{Modelos parametricos}
+La distribucion de $X$ pertence a una familia de distribuciones $\mathcal{F}$ que dependen de un parametro desconocido.\\
+\subsection{Familia parametrica de distribuciones}
+$\mathcal{F} = \{ F_{\theta}(x): \theta \in \Theta \}$ sera una familia de ditribuciones de probabilidad parametrizadas por un subconjunto
+no vacio $\Theta \in \mathbb{R}^{p}$ llamada espacio parametrico.\\
+Correspondecia uno a uno :
+\begin{equation*}
+    F_{\theta_{1}}(x) \neq F_{\theta_{2}}(x) \leftrightarrow \theta_{1} \neq \theta_{2}
+\end{equation*}
+\subsection{Ejemplos de familias parametricas}
+\begin{enumerate}
+    \item $X \backsim Ber(p) \rightarrow f_{p}(x) = p^{x}(1-p)^{1-x}, 0 < p < 1$ con $p \in \Theta = (0,1)$
+    \item $T \backsim Exp(\lambda) \rightarrow f_{\lambda}(t) = \lambda e ^{-\lambda t}, \lambda > 0 $
+    \item $Y \backsim \mathcal{N}(\mu, \sigma^{2}) \rightarrow f_{\mu,\sigma^{2}} (x) = \frac{1}{2 \pi \sigma^{2}} e^{-\frac{1}{2 \sigma ^{2}}(x-\mu)^{2}}, \mu \in \mathbb{R}, \sigma^{2} > 0  $
+\end{enumerate}
+\subsection{Familia Regular}
+\begin{enumerate}
+    \item El soporte de $f_{\theta}(x)$ no depende de $\theta$.
+    \item $f_{\theta}$ es derivable con respecto a $\theta \hspace{8px} \forall x$.
+    \item El conjunto parametrico $\Theta \in \mathbb{R}^{p}$ es discreto. 
+\end{enumerate}
+\subsection{Familias exponenciales}
+Se dice que una familia de distribuciones (continuas o discretas) en $\mathbb{R}^{q}$ con distribucion $F_{\theta}$
+, $\theta \in \Theta \subset \mathbb{R}^{k} $ es una familia exponencial a $k$ parametro, si una funcion de densidad (o probabilidad) 
+se puede escribir como:
+\begin{equation*}
+    f_{\theta}(x) = A(\theta) e^{\sum_{i=1}^{k}C_{i}(\theta)r_{i}(x)} \cdot h(x)
+\end{equation*}
+Donde:
+\begin{eqnarray*}
+    C(\theta) \hspace{16px} \Theta \rightarrow \mathbb{R}\\
+    A(\theta) \hspace{16px} \Theta \rightarrow \mathbb{R}^{+}\\
+    r_{i}(x) \hspace{16px} \mathbb{R}^{q} \rightarrow \mathbb{R}\\
+    h(x) \hspace{16px} \mathbb{R}^{q} \rightarrow \mathbb{R}^{+}\\
+\end{eqnarray*}
+\section{Funcion de Verosimilitud}
+Es la funcion conjunta (de densidad o probabilidad) visita como funcion del parametro desconocido $\theta$:
+\begin{eqnarray*}
+    \mathcal{L}(\theta) = \prod_{i=1}^{n} f_{\theta} (x_{i}) \text{ si } \underline{x} \text{ es continuo.}\\
+    \mathcal{L}(\theta) = \prod_{i=1}^{n} p_{\theta} (x_{i}) \text{ si } \underline{x} \text{ es discreto.}\\  
+\end{eqnarray*}
+\section{Estadistico}
+Un estadistico es cualquier funcion medible $T_{n} = T(\underline{X})$ con valores en un espacio eucliedeo de dimension finita.\\
+Dada una m.a. $\underline{X}$, un estadistico es una funcion de la m.a. que evaluada en los valores observados, debe porder resultar en un valor
+numerico. Esta no puede depender de los parametros desconocidos. El estadistico es una funcion de la m.a. $\underline{X} \rightarrow$ es una V.A.
+\subsection{Estadisticos Suficientes}
+Sea $\underline{X} = (X_{1},...,x_{n})$ un vector aleatorio de dimension $n$ cuya distribucion es $F_{\theta}(\underline{x}), \hspace{8px} \theta \in \Theta$ se dice que un 
+estadistico $T = r(\underline{X})$ es suficiente para $\theta$ si la distribucion de $\underline{X}$ condicionada a que $T=t$ es independiente de $\theta \hspace{8px} \forall \hspace{8px} t$.\\
+Esto significa que si conozco a $T$ y la distribucion de $\underline{X}|T=t$, entonces puedo reconstruir una muestra con la misma distribucion que la muestra original.
+\subsection{Teorema de Factorizacion}
+Sea $\underline{X}$ un vector aleatorio con funcion de densidad (o probabilidad) conjunta $f_{\theta}(\underline{x}), \hspace{8px} \theta \in \Theta$ entonces el estadistico 
+$T = r(\underline{X})$ es suficiente para $\theta$ si y solo si existen dos funciones $h$ y $g$ tales que:
+\begin{equation*}
+    f_{\theta}(x) = g(r(\underline{x}),\theta) \cdot h(\underline{x})
+\end{equation*}
+\subsection{Teorema}
+Una familia exponencial a $k$ parametros tiene como estadistico suficiente para $\theta \in \mathbb{R}^{k}$ al vector:
+\begin{equation*}
+    T = (r_{1}(\underline{X}),...,r_{k}(\underline{X}))
+\end{equation*}
+Si $X_{1},...,X_{n}$ es una m.a. de una distribucion perteneciente a una familia exponencial a $k$ parametros entonces al vector aleatorio $\underline{X}$ tambien tiene una distribucion perteneciente a una familia exponencial a $k$ parametros, y el estadistico suficiente para $\theta$ basado en la m.a. sera:
+\begin{equation*}
+    T = (\sum_{i=1}^{n}r_{1}(X_{1}),...,\sum_{i=1}^{n}r_{k}(X_{1}))
+\end{equation*} 
+\section{Estimadores}
+\begin{enumerate}
+    \item Es un estadistico cuyos valores se consideran medidas experimentales de un parametro desconocido.
+    \item Un estimador es una funcion de la muestra (estadistico) que provee un valor aproximado de un parametro o caracteristica desconocida.
+\end{enumerate} 
+\subsection{Metodo de maxima verosimilitud}
+Es un metodo para construir estimadores puntuales. Se basa en que, en los experimentos aleatorios, los resultados observados deben tener alta probabilidad de ocurrir.\\
+Diremos que $\hat{\theta}(\underline{X})$ es un estimador de maxima verosimilitud de $\theta$ si se cumple que:
+\begin{equation*}
+    f_{\hat{\theta}}(\underline{X}) = max_{\theta}f_{\theta}(\underline{x})
+\end{equation*}
+Es decir, buscamos el valor de $\theta$ que maximiza la funcion de verosimilitud.
+\begin{equation*}
+    \hat{\theta} = argmax_{\theta} \mathcal{L}(\theta)
+\end{equation*}
+A partir de la funcion de verosimilitud $\mathcal{L}(\theta)$ vamos a buscar el valor de $\theta$ que maximiza dicha funcion, luego $\hat{\theta} = \hat{\theta}(\underline{X})$.\\
+Si $\Theta$ es un subconjunto abierto tal que el soporte de $f_{\theta}(\underline{x})$ no depende de $\theta$, como la funcon logaritmo es monotona creciente, maximizar $\mathcal{L}(\theta)$ es lo mismo que maximizar $log(\mathcal{L}(\theta))$. Luego, el EMV verificara que:
+\begin{equation*}
+    \frac{d}{d\theta} ln(\mathcal{L}(\theta)) = 0
+\end{equation*}
+\subsection{Principio de invariancia}
+Supongamos que $\lambda = q(\theta)$ es una funcion biunivoca de $\theta$. Si $\hat{\theta}$ es el EMV de $\theta$ entonces $\hat{\lambda} = q(\hat{\theta})$ sera el EMV de $\lambda$.
+\subsection{Bondad de los estimadores}
+Dada $X_{1},...,X_{n} \backsim^{iid} F_{\theta}(x), \hspace{8px} \theta \in \Theta$ una m.a. Estimamos $\theta$ por $\hat{\theta}$. El riesgo de estimar $\theta$ con $\hat{\theta}$ se mide con el error cuadratico medio.
+\begin{equation*}
+    R(\theta,\hat{\theta}) = ECM(\hat{\theta}) = E [(\theta - \hat{\theta})^{2}]
+\end{equation*}
+Diremos que un estimador optimo para $\theta$ sera $\hat{\theta}$ tal que 
+\begin{equation*}
+    ECM(\hat{\theta}^{k}) \leq ECM(\hat{\theta}), \forall \hat{\theta}
+\end{equation*}
+\subsection{Estimador Insesgado}
+Un estimador es insesgado para $\theta$ si:
+\begin{equation*}
+    E_{\theta)}(\hat{\theta}) = \theta, \hspace{8px} \forall \theta \in \Theta
+\end{equation*} 
+En caso contrario, diremos que el estimador es sesgado, y definiremos su sesgo como:
+\begin{equation*}
+    B(\hat{\theta}) = E_{\theta}(\hat{\theta}) - \theta
+\end{equation*}
+\subsubsection{Propiedad}
+Dado un estimador de $\theta$, se tiene que:
+\begin{equation*}
+    ECM(\hat{\theta}) = Var_{\theta}(\hat{\theta}) + B(\hat{\theta})^{2}
+\end{equation*}
+Por lo tanto, si es insesgado, $B = 0$ y $ECM(\hat{\theta}) =  Var_{\theta}(\hat{\theta})$
+\subsubsection{Estimador asintoticamente insesgado}
+Un estimador es asintoticamente insesgado si:
+\begin{equation*}
+    lim_{n\rightarrow \infty} E_{\theta}(\hat{\theta}) = \theta, \hspace{8px} \forall \theta \in \Theta
+\end{equation*}
+\subsection{Estimador consistente}
+Dada una sucesion de estimadores $\hat{\theta}_{n}$ de $\theta$, decimos que $T=\hat{\theta}$ es (debilmente) consistente si $\forall \hspace{8px}\varepsilon > 0$:
+\begin{equation*}
+    P_{\theta}(|T - \theta| > \varepsilon) \rightarrow_{n\rightarrow \infty} 0
+\end{equation*}
+\subsubsection{Teorema}
+Sea una sucesion de estimadores de $\hat{\theta}_{n}$ de $\theta$. Si $Var_{\theta}(\hat{\theta}) \rightarrow 0$ y $E_{\theta}(\hat{\theta}) \rightarrow \theta$.
+entonces $\hat{\theta}_{n}$ es debilmente consistente.
+\subsubsection{Consistencia media cuadratica}
+\begin{equation*}
+    lim_{n \rightarrow \infty}ECM(\hat{\theta}) = 0, \hspace{8px} \forall \theta \in \Theta
+\end{equation*}
+\subsection{Estimadores asintoticamente normales}
+Se dice que $\hat{\theta}_{n}$ es una sucesion de estimadores asintoticamente normales si $\sqrt{n}(\hat{\theta}_{n} - q(\theta))$
+converge en distribucion a una normal con media cero y varianza $\frac{q'(\theta)^{2}}{T(\theta)}$.\\
+$I(\theta)$ se llama \color{orange} Numero de informacion de fisher \color{black} y se calcula como:
+\begin{equation*}
+    I(\theta) = E[(\frac{d}{d\theta}ln(f_{\theta}(X)))^{2}] = - E[\frac{d^{2}}{d\theta^{2}}ln(f_{\theta}(X))]
+\end{equation*}
+(vale solo para familias regulares)
+\subsubsection{Teorema}
+Bajo ciertas condiciones muy generales, sea $\hat{\theta}_{n}(\underline{X})$ un EMV de $\theta$ \underline{consistente} y sea $q(\theta)$ derivable con $q'(\theta) \neq 0, \hspace{8px} \forall \theta$, entonces
+$q(\hat{\theta}_{n})$ es asintoticamente normal para estimar $q(\theta)$.\\
+Si $\sqrt{n}\sqrt{I(\theta)} \cdot (\hat{\theta}_{n}- \theta) \backsim^{a} \mathcal{N}(0,1)$ y $\hat{\theta}$ es un estimador consistente para $\theta$ (todo esto ocurrira con los EMV), entonces vale que:\\
+\begin{equation*}
+    \sqrt{n}\sqrt{I(\hat{\theta}_{n})} \cdot (\hat{\theta}_{n}- \theta) \backsim^{a} \mathcal{N}(0,1)
+\end{equation*}
+\section{Distribuciones continuas importantes}
+\subsection{Chi-Cuadrado}
+La V.A. X tiene una distribucion $\mathcal{X}^{2}$ de parametro $v$ (grados de libertad) si su densidad esta dada por:
+\begin{equation*}
+    f_{X}(x) = \frac{1}{\Gamma(v/2)} (\frac{1}{2})^{v/2} \cdot x^{\frac{v}{2}-1} e^{-x/2} \mathbb{1} {x>0}
+\end{equation*}
+Se puede observar que coincide con una variable con distribucion $\Gamma(\frac{v}{2},\frac{1}{2})$. De ahi deducimos facilmente que $E(X)=v$ y $Var(X) =2v$.\\
+\subsubsection{Teorema}
+Si $x_{1},...,X_{n}, i=1,...,n$, entonces $Y= \sum_{i=1}^{n}X_{i}$ tendra distribucion $\mathcal{X}^{2}_{v}$, con $v =\sum_{i=1}^{n} V_{i} $.
+\subsubsection{Corolario}
+Se llama distribucion $\mathcal{X}^{2}$ con $n$ grados de libertad a la distribucion de $U = \sum_{i=1}^{n} Z_{i}^{2}$ donde $Z_{i},...,Z_{n} \backsim^{iid} \mathcal{N}(0,1)$.
+\subsection{t de Student}
+Sean $Z \backsim \mathcal{N}(0,1)$ y $U \backsim \mathcal{X}^{2}$, entonces si $Z$ y $U$ son independientes, $T= \frac{Z}{\sqrt{U/n}} \backsim t_{n}$.
+\subsection{Distribucion F de Fisher-Snedecor}
+Sean $U$ y $V$ dos variables aleatorias indep. con distribucion $\mathcal{X}^{2}$ de $n_{1}$ y $n_{2}$ g.l. respectivamente.\\
+Entonces:
+\begin{equation*}
+    F=\frac{U/n_{1}}{V/n_{2}} \backsim \mathcal{F}_{n_{1},n_{2}}
+\end{equation*}
+\subsection{Teorema}
+Sean $X_{1},...,X_{n} \backsim^{iid} \mathcal{N}(\mu,\sigma^{2})$
+\begin{enumerate}
+    \item $Z=\sqrt{n} ()$
+\end{enumerate}
 \end{document}
