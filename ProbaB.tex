@@ -847,7 +847,7 @@ Un estadistico es cualquier funcion medible $T_{n} = T(\underline{X})$ con valor
 Dada una m.a. $\underline{X}$, un estadistico es una funcion de la m.a. que evaluada en los valores observados, debe porder resultar en un valor
 numerico. Esta no puede depender de los parametros desconocidos. El estadistico es una funcion de la m.a. $\underline{X} \rightarrow$ es una V.A.
 \subsection{Estadisticos Suficientes}
-Sea $\underline{X} = (X_{1},...,x_{n})$ un vector aleatorio de dimension $n$ cuya distribucion es $F_{\theta}(\underline{x}), \hspace{8px} \theta \in \Theta$ se dice que un 
+Sea $\underline{X} = (X_{1},...,X_{n})$ un vector aleatorio de dimension $n$ cuya distribucion es $F_{\theta}(\underline{x}), \hspace{8px} \theta \in \Theta$ se dice que un 
 estadistico $T = r(\underline{X})$ es suficiente para $\theta$ si la distribucion de $\underline{X}$ condicionada a que $T=t$ es independiente de $\theta \hspace{8px} \forall \hspace{8px} t$.\\
 Esto significa que si conozco a $T$ y la distribucion de $\underline{X}|T=t$, entonces puedo reconstruir una muestra con la misma distribucion que la muestra original.
 \subsection{Teorema de Factorizacion}
@@ -899,7 +899,7 @@ Diremos que un estimador optimo para $\theta$ sera $\hat{\theta}$ tal que
 \subsection{Estimador Insesgado}
 Un estimador es insesgado para $\theta$ si:
 \begin{equation*}
-    E_{\theta)}(\hat{\theta}) = \theta, \hspace{8px} \forall \theta \in \Theta
+    E_{\theta}(\hat{\theta}) = \theta, \hspace{8px} \forall \theta \in \Theta
 \end{equation*} 
 En caso contrario, diremos que el estimador es sesgado, y definiremos su sesgo como:
 \begin{equation*}
@@ -965,6 +965,110 @@ Entonces:
 \subsection{Teorema}
 Sean $X_{1},...,X_{n} \backsim^{iid} \mathcal{N}(\mu,\sigma^{2})$
 \begin{enumerate}
-    \item $Z=\sqrt{n} ()$
+    \item $Z=\sqrt{n} (\frac{\bar{X} - \mu}{\sigma}) \backsim \mathcal{N}(0,1)$.
+    \item $W = \sum_{i=1}^{n}\frac{(X_{i}-\bar{X})^{2}}{\sigma^{2}} \backsim \mathcal{X}_{n-1}^{2}$.
+    \item $w$ y $Z$ son independientes.
+    \item Si $S^{2} = \sum_{i=1}^{n} \frac{(X_{i}-\bar{X})^{2}}{n-1} $ entonces $T = \sqrt{n}\frac{(\bar{X} - \mu)}{S} \backsim t_{n-1}$
 \end{enumerate}
+\section{Test de hipotesis}
+Una hipotesis es una suposicion o conjetura sobre la naturaleza, cuyo valor de verdad o falsedad no se conoce. Una hipotesis estadistica es una hipotesis sobre una o mas poblaciones estadisticas o sobre un fenomeno aleatorio.
+\begin{enumerate}
+    \item Hipotesis estadistica $\rightarrow$ Poblacion.
+    \item Analisis $\rightarrow$ Muestra.
+\end{enumerate}
+\subsection{Ensayo de hipotesis} 
+Procedimiento que se sigue para tratar de averiguar si una hipotesis es verdadera o falsa.
+Siempre se van a presentar dos hiportesis:
+\begin{enumerate}
+    \item $H_{1}:$ (Hipotesis de investigador) Hipotesis alternativa.
+    \item $H_{0}:$ Hipotesis nula. Objeto de ensayo. (Se formula con la intension de ser rechazada)
+\end{enumerate}
+\subsection{Tipos de errores}
+\begin{enumerate}
+    \item Error de tipo $I$: Se comete cuando se rechaza una hipotesis nula que era verdadera. Debe tener MUY baja probabilidad.
+    \item Error de tipo $II$: Se comete cuando no se rechaza una hipotesis nula que era falsa.
+\end{enumerate}
+[E$I$ es mas grave que E$II$]
+\subsection{Potencia del test}
+Probabilidad de rechazar la hipotesis nula.
+\subsection{Test de hipotesis}
+Es una regla de decision entre $H_{0}$ y $H_{1}$, y la expresamos como una funcion de la muestra aleatoria $\delta(\underline{X})$ que puede tomar los valores 0 o 1.
+Si $\delta(\underline{X}) = 1$ se rechaza $H_{0}$, y en caso contrario no se rechaza.\\
+Sea $\underline{X} = (X_{1},...,X_{n})$ una m.a. de una poblacion con distribucion $F_{\theta} (x), \hspace{8px} \theta \in \Theta $.
+Sean $\Theta_{1}$ y $\Theta_{2}$ tales que $\Theta_{1} \cup \Theta_{2} = \Theta$ y $\Theta_{1} \cap  \Theta_{2} = \emptyset $. Un test para este problema es una regla de decision basada en $\underline{X}$ para decidir entre 2 hipotesis.
+\begin{equation*}
+    H_{0}: \theta \in \Theta_{1} \hspace{16px} vs \hspace{16px} H_{1}: \theta \in \Theta_{2}
+\end{equation*}
+Entonces:
+\begin{enumerate}
+    \item $P('\text{Error I}') = P_{\theta}('\text{Rechazar }H_{0}'), \theta \in \Theta_{1} $
+    \item $P('\text{Error II}') = P_{\theta}('\text{No rechazar }H_{0}'), \theta \in \Theta_{2} $
+\end{enumerate}
+Y la potencia del test es $\Pi_{\delta}(\theta) = P_{\theta}('\text{Rechazar }H_{0}') = P_{\theta}(\delta(\underline{X}) =1 ) = E_{\theta}\delta(\underline{X})$.\\
+OBS:
+\begin{enumerate}
+    \item $P('\text{Error I}') = \Pi_{\delta}(\theta), \hspace{8px} \theta \in \Theta_{1}$
+    \item $P('\text{Error II}') = 1- \Pi_{\delta}(\theta), \hspace{8px} \theta \in \Theta_{2}$
+\end{enumerate}
+\subsection{Nivel de significacion del test}
+Es la maxima probabilidad de cometer un error de tipo $I$.
+\begin{equation*}
+    \alpha = sup_{\theta \in \Theta_{1}} \Pi_{\delta}(\theta)
+\end{equation*}
+Se llama \color{violet} $p$-valor \color{black} de un test al menor nivel de significacion para el cual se rechaza $H_{0}$, para una observacion dada.
+(Es la probabilidad de encontrar un valor tan o mas extremo que el que se encontro con la muestra observada).\\
+Llamaremos curva caracteristica:
+\begin{equation*}
+    \beta(\theta) = P_{\theta}('\text{Error II}') = 1- \Pi_{\delta}(\theta), \hspace{8px} \theta \in \Theta_{2}
+\end{equation*}
+\subsection{Test del cociente de verosimilitud}
+\subsubsection{Test para hipotesis simple vs hipotesis simple}
+Es el caso cuando tenemos $\Theta_{1}$ y $\Theta_{2}$ con un solo elemento cada una:
+\begin{equation*}
+    H_{0}: \theta = \theta_{1} \hspace{16px} vs. \hspace{16px} H_{1}: \theta = \theta_{2}
+\end{equation*}
+Regla de decision (Test):
+\begin{equation*}
+    \delta(\underline{x})= \left\{ \begin{array}{lcc}
+        1 &   si  & \frac{f_{\theta_{2}}(\underline{X})}{f_{\theta_{1}}(\underline{X})} > K_{\alpha} \\
+        0 &  si & no
+        \end{array}
+    \right.
+\end{equation*}
+DAda un $\alpha$ fijo, debemos hallar $K_{\alpha}$ que cumpla:
+\begin{equation*}
+    \alpha = P_{\theta_{1}}((\delta(\underline{X}) = 1))
+\end{equation*}
+Supongamos que $X_{1},...,X_{n} \backsim^{iid} \mathcal{N}(\mu,\sigma^{2})$ nuestra m.a., y que por alguna razon razon conocemos $\sigma^{2}$.
+\begin{equation*}
+    H_{0}: \mu = \mu_{1} \hspace{16px} vs. \hspace{16px} H_{1}: \mu = \mu_{2}
+\end{equation*}
+Desarrollando el cociente de verosimilitud, aplicando logaritmo y desarrollando cuadrados:
+\begin{equation*}
+    \delta(\underline{x})= \left\{ \begin{array}{lcc}
+        1 &   si  & \sum_{i=1}^{n}(X_{i}) > K'_{\alpha} \\
+        0 &  si & no
+        \end{array}
+    \right.
+\end{equation*}
+Y para hallar el valor de $K'_{\alpha}$ usamos la $2^{o}$ condicion.
+\begin{equation*}
+    \alpha = P_{\mu_{1}}(\delta(\underline{X}) =1) = P_{\mu_{1}}(\sum_{i=1}^{n}(X_{i}) > K'_{\alpha}) = P_{\mu_{1}}(\frac{\sum_{i=1}^{n}(X_{i})-n \cdot \mu_{1}}{\sqrt{n\sigma^{2}}}< z _{\alpha})
+\end{equation*}
+Entonces el test con nivel de significacion $\alpha$.
+\begin{equation*}
+    \delta(\underline{x})= \left\{ \begin{array}{lcc}
+        1 &   si  & \frac{\sum_{i=1}^{n}(X_{i})-n \cdot \mu_{1}}{\sqrt{n\sigma^{2}}}< z _{\alpha} \\
+        0 &  si & no
+        \end{array}
+    \right.
+\end{equation*}
+OBS: $\delta(\underline{X})$ depende de $\alpha, n$ la m.a. y el valor del parametro. Bajo $H_{0}$ la regla sera la misma si $H_{1}: \mu<\mu_{1}$.\\
+La funcion potencia para este caso:
+\begin{eqnarray*}
+    \Pi_{\delta}(\mu) &= P_{\mu}(\delta(\underline(X))=1)\\
+    &= P_{\mu} (\frac{\sum_{i=1}^{n}(X_{i})-n \cdot \mu_{1}}{\sqrt{n\sigma^{2}}}< z _{\alpha})\\
+    &=P_{\mu} (\sum_{i=1}^{n}(X_{i})< z _{\alpha}) \cdot \sqrt{n\sigma^{2}} + n \cdot \mu_{1}\\
+    &= \Phi(z_{\alpha} - \frac{\sqrt{n}}{\sigma}(\mu -\mu_{1}) )
+\end{eqnarray*}
 \end{document}
