@@ -1035,7 +1035,7 @@ Regla de decision (Test):
         \end{array}
     \right.
 \end{equation*}
-DAda un $\alpha$ fijo, debemos hallar $K_{\alpha}$ que cumpla:
+Dada un $\alpha$ fijo, debemos hallar $K_{\alpha}$ que cumpla:
 \begin{equation*}
     \alpha = P_{\theta_{1}}((\delta(\underline{X}) = 1))
 \end{equation*}
@@ -1071,4 +1071,38 @@ La funcion potencia para este caso:
     &=P_{\mu} (\sum_{i=1}^{n}(X_{i})< z _{\alpha}) \cdot \sqrt{n\sigma^{2}} + n \cdot \mu_{1}\\
     &= \Phi(z_{\alpha} - \frac{\sqrt{n}}{\sigma}(\mu -\mu_{1}) )
 \end{eqnarray*}
+\subsection{Propiedad}
+Sea $\underline{X} = (X_{1},...,X_{n})$ una m.a. con distribucion perteneciente a una familia exponencial, luego
+\begin{enumerate}
+    \item Si $c(\theta)$ es creciente, el test para 
+    \begin{equation*}
+        H_{0}: \theta \leq \theta_{1} \hspace{16px} vs \hspace{16px} \theta > \theta_{1}
+    \end{equation*}
+    Sera
+    \begin{equation*}
+        \delta(\underline{x})= \left\{ \begin{array}{lcc}
+        1 &   si  & T > K_{\alpha} \\
+        0 &  si & T \leq K_{\alpha}
+        \end{array}
+        \right.
+    \end{equation*}
+    Sabiendo que $T(X) = r(\underline{X})$. Aclaracion: La uniforme entra en este caso.\\
+    Que para un nivel $\alpha$ dado se tendra $\alpha = P_{\theta_{1}} (\delta(\underline{X})=1 )$
+    \item Si $c(\theta)$ es decreciente, el test para 
+    \begin{equation*}
+        H_{0}: \theta \leq \theta_{1} \hspace{16px} vs \hspace{16px} H_{1}:\theta > \theta_{1}
+    \end{equation*}
+    Sera
+    \begin{equation*}
+        \delta(\underline{x})= \left\{ \begin{array}{lcc}
+            1 &   si  & -T > K_{\alpha} \\
+            0 &  si & -T \leq K_{\alpha}
+            \end{array}
+            \right.
+    \end{equation*}
+    Que para un nivel $\alpha$ dado se tendra $\alpha = P_{\theta_{1}} (\delta(\underline{X})=1 )$.\\
+    En todos casos los signos $(<,>,\leq,\geq)$  se pueden dar vuelta, TODOS.
+\end{enumerate}
+\subsection{}
+
 \end{document}

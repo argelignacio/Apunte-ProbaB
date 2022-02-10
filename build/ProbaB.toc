@@ -132,3 +132,4 @@
 \contentsline {subsection}{\numberline {32.5}Nivel de significacion del test}{26}{subsection.32.5}%
 \contentsline {subsection}{\numberline {32.6}Test del cociente de verosimilitud}{26}{subsection.32.6}%
 \contentsline {subsubsection}{\numberline {32.6.1}Test para hipotesis simple vs hipotesis simple}{26}{subsubsection.32.6.1}%
+\contentsline {subsection}{\numberline {32.7}Propiedad}{27}{subsection.32.7}%
